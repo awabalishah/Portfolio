@@ -1,29 +1,29 @@
 import { motion } from 'framer-motion';
 
 const skills = [
-    "UX Design",
-    "UI Design",
-    "Product Design",
-    "Design Systems",
-    "Front-End Development",
-    "Workshops",
-    "Design Sprint",
-    "Interaction Design",
-    "User Testing",
-    "Usability Testing",
-    "UX Research",
-    "Leadership",
-    "Mentoring",
-    "No-Code"
+    "Full Stack Development",
+    "Marketing Strategy",
+    "Funnel Building",
+    "Lead Generation",
+    "Conversion Optimization",
+    "SEO & SEM",
+    "Email Marketing",
+    "Landing Page Design",
+    "Web Analytics",
+    "A/B Testing",
+    "Copywriting",
+    "Social Media Marketing",
+    "Paid Advertising",
+    "E-commerce"
 ];
 
 const Skills = () => {
     return (
         <section className="section bg-zinc-900/20">
-            <div className="container max-w-5xl mx-auto px-8">
-                <h2 className="text-4xl font-medium mb-12">Skills</h2>
+            <div className="container max-w-4xl mx-auto px-8">
+                <h2 className="text-4xl font-medium mb-12 text-center">Skills</h2>
 
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-3 justify-center">
                     {skills.map((skill, index) => (
                         <motion.div
                             key={index}

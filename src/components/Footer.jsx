@@ -1,47 +1,57 @@
-import { motion } from 'framer-motion';
-
 const Footer = () => {
     return (
-        <footer id="contact" className="section pb-12">
-            <div className="container">
-                <div className="border-t border-white/10 pt-20">
-                    <div className="grid-12">
-                        <div className="col-span-12 md:col-span-8">
-                            <motion.h2
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                className="text-5xl md:text-7xl font-medium tracking-tight mb-12"
-                            >
-                                Let's work <br />
-                                <span className="text-gray-500">together.</span>
-                            </motion.h2>
-                            <motion.a
-                                href="mailto:hey@awabalishah.com"
-                                className="inline-flex items-center gap-2 text-xl hover:text-gray-400 transition-colors"
-                                whileHover={{ x: 10 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                hey@awabalishah.com
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                                    <polyline points="7 7 17 7 17 17"></polyline>
-                                </svg>
-                            </motion.a>
-                        </div>
+        <footer className="bg-zinc-900/50 border-t border-white/5 py-16">
+            <div className="container max-w-4xl mx-auto px-8">
+                <div className="flex flex-col items-center gap-8 mb-12">
+                    <div className="text-center">
+                        {/* Handwritten Style Logo */}
+                        <h3 className="text-4xl md:text-5xl font-light mb-3" style={{ fontFamily: 'Brush Script MT, cursive' }}>
+                            Awab Ali.
+                        </h3>
+                        <p className="text-gray-500 text-sm">Full Stack Web & Marketing Expert</p>
+                    </div>
 
-                        <div className="col-span-12 md:col-span-4 flex flex-col justify-between mt-12 md:mt-0">
-                            <div className="flex flex-col gap-4">
-                                <h3 className="text-sm text-gray-500 uppercase tracking-wider">Socials</h3>
-                                <a href="#" className="hover:text-gray-400 transition-colors">LinkedIn</a>
-                                <a href="#" className="hover:text-gray-400 transition-colors">Twitter</a>
-                                <a href="#" className="hover:text-gray-400 transition-colors">Instagram</a>
-                            </div>
+                    <div className="flex gap-8">
+                        <a
+                            href="https://www.linkedin.com/in/awab-ali/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                        >
+                            LinkedIn
+                        </a>
+                        <a
+                            href="https://x.com/Awabalishah"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                        >
+                            X (Twitter)
+                        </a>
+                        <a
+                            href="http://github.com/awabalishah/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                        >
+                            GitHub
+                        </a>
+                        <a
+                            href="mailto:hey@awabalishah.com"
+                            className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                        >
+                            Email
+                        </a>
+                    </div>
+                </div>
 
-                            <p className="text-sm text-gray-600 mt-12">
-                                &copy; {new Date().getFullYear()} Awab Ali Shah
-                            </p>
-                        </div>
+                <div className="pt-8 border-t border-white/5 text-center">
+                    <p className="text-sm text-gray-500 mb-4">
+                        © {new Date().getFullYear()} Awab Ali Shah. All rights reserved.
+                    </p>
+                    <div className="flex justify-center gap-6 text-xs text-gray-600">
+                        <a href="#" className="hover:text-gray-400 transition-colors">Privacy Policy</a>
+                        <a href="#" className="hover:text-gray-400 transition-colors">Terms of Service</a>
                     </div>
                 </div>
             </div>

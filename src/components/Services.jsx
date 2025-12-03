@@ -2,27 +2,27 @@ import { motion } from 'framer-motion';
 
 const services = [
     {
-        title: "UI Design",
-        description: "Creating beautiful, intuitive interfaces that delight users and solve complex problems.",
-        tags: ["App Design", "Web Design", "Design Systems"]
+        title: "Website Design & Development",
+        description: "Building beautiful, high-converting websites with modern aesthetics that turn visitors into customers.",
+        tags: ["Full Stack Development", "Responsive Design", "E-commerce"]
     },
     {
-        title: "UX Research",
-        description: "Understanding user needs through deep research and data-driven insights.",
-        tags: ["User Testing", "Wireframing", "Prototyping"]
+        title: "Marketing Funnels",
+        description: "Creating custom marketing funnels tailored to your niche that guide prospects through the buyer journey.",
+        tags: ["Sales Funnels", "Email Automation", "Landing Pages"]
     },
     {
-        title: "Development",
-        description: "Bringing designs to life with modern technologies and pixel-perfect precision.",
-        tags: ["React", "Framer", "Webflow"]
+        title: "Lead Generation & Sales",
+        description: "Implementing proven strategies to generate qualified leads and convert them into paying customers.",
+        tags: ["SEO", "Paid Ads", "Conversion Optimization"]
     }
 ];
 
 const Services = () => {
     return (
         <section id="services" className="section bg-zinc-900/20">
-            <div className="container">
-                <h2 className="text-4xl font-medium mb-16">Services</h2>
+            <div className="container max-w-4xl mx-auto px-8">
+                <h2 className="text-4xl font-medium mb-16 text-center">Services</h2>
 
                 <div className="grid md:grid-cols-3 gap-8">
                     {services.map((service, index) => (
@@ -37,7 +37,7 @@ const Services = () => {
                                 ease: [0.22, 1, 0.36, 1]
                             }}
                             whileHover={{ y: -8 }}
-                            className="p-8 bg-zinc-900/30 rounded-2xl border border-white/5 hover:border-white/10 transition-colors"
+                            className="p-8 bg-gradient-to-br from-zinc-900/50 to-zinc-800/50 rounded-2xl border border-white/10 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/10 transition-all"
                         >
                             <h3 className="text-2xl font-medium mb-4">{service.title}</h3>
                             <p className="text-gray-400 mb-6 leading-relaxed">{service.description}</p>

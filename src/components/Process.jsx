@@ -3,41 +3,41 @@ import { motion } from 'framer-motion';
 const processSteps = [
     {
         number: "01",
-        title: "Discovery",
-        description: "Understanding the problem space, user needs, and business goals through research and stakeholder interviews."
+        title: "Research & Discovery",
+        description: "Understanding your business, target audience, niche, and competitors to identify the best opportunities for growth."
     },
     {
         number: "02",
-        title: "Define",
-        description: "Synthesizing insights to define the core problem, user personas, and success metrics."
+        title: "Strategy & Planning",
+        description: "Creating a custom marketing strategy with clear goals, funnel design, and conversion optimization plan."
     },
     {
         number: "03",
-        title: "Ideate",
-        description: "Brainstorming solutions, sketching concepts, and exploring different design directions."
+        title: "Design & Development",
+        description: "Building beautiful, high-converting websites and landing pages with modern aesthetics and user experience."
     },
     {
         number: "04",
-        title: "Design",
-        description: "Creating high-fidelity mockups, prototypes, and design systems with pixel-perfect precision."
+        title: "Funnel Creation",
+        description: "Setting up automated marketing funnels with email sequences, retargeting, and lead nurturing systems."
     },
     {
         number: "05",
-        title: "Test",
-        description: "Validating designs through user testing, gathering feedback, and iterating based on insights."
+        title: "Launch & Deploy",
+        description: "Going live with your website, funnels, and marketing campaigns across all channels."
     },
     {
         number: "06",
-        title: "Deliver",
-        description: "Handing off to development, ensuring implementation quality, and measuring impact."
+        title: "Optimize & Scale",
+        description: "Analyzing data, A/B testing, and continuously improving performance to maximize leads and sales."
     }
 ];
 
 const Process = () => {
     return (
         <section className="section">
-            <div className="container max-w-5xl mx-auto px-8">
-                <h2 className="text-4xl font-medium mb-16">Process</h2>
+            <div className="container max-w-4xl mx-auto px-8">
+                <h2 className="text-4xl font-medium mb-16 text-center">Process</h2>
 
                 <div className="grid md:grid-cols-2 gap-x-12 gap-y-12">
                     {processSteps.map((step, index) => (
