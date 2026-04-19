@@ -1,5 +1,6 @@
 import Hero from '../components/Hero';
-import Work from '../components/Work';
+import Results from '../components/Results';
+
 import Services from '../components/Services';
 import Process from '../components/Process';
 import Skills from '../components/Skills';
@@ -9,7 +10,8 @@ const Home = () => {
     return (
         <>
             <Hero />
-            <Work />
+            <Results />
+
             <Services />
             <Process />
             <Skills />

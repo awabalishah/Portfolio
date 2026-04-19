@@ -44,8 +44,8 @@ const Navbar = () => {
                             </a>
 
                             {[
+                                { href: '#results', label: 'Results' },
                                 { href: '#services', label: 'Services' },
-                                { href: '#work', label: 'Work' },
                                 { href: '#process', label: 'Process' },
                             ].map((item) => (
                                 <a
@@ -55,7 +55,7 @@ const Navbar = () => {
                                 >
                                     <span className="relative z-10">{item.label}</span>
                                     <div className="absolute inset-0 bg-white/5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                    <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-3/4 transition-all duration-300"></div>
+                                    <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-amber-400 group-hover:w-3/4 transition-all duration-300"></div>
                                 </a>
                             ))}
 
@@ -96,8 +96,8 @@ const Navbar = () => {
                                 +92 322 7601040
                             </a>
                             {[
+                                { href: '#results', label: 'Results' },
                                 { href: '#services', label: 'Services' },
-                                { href: '#work', label: 'Work' },
                                 { href: '#process', label: 'Process' },
                             ].map((item) => (
                                 <a
