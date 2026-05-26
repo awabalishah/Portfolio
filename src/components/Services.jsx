@@ -7,10 +7,10 @@ const services = [
                 <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
             </svg>
         ),
-        title: "Paid Advertising",
-        description: "Google Ads, Meta Ads, and TikTok Ads campaigns engineered for measurable ROAS — not just impressions. I build, test, and scale what actually converts.",
-        tags: ["Google Ads", "Meta Ads", "TikTok Ads", "ROAS Optimization"],
-        accent: "orange"
+        title: "Targeted Patient Ads",
+        description: "Google Search & Meta Campaigns engineered specifically to attract high-value patients looking for treatment (veins, pain therapies, joint care, and wellness services) within 15-30 miles of your clinic.",
+        tags: ["Google Search Ads", "Meta Local Ads", "Google LSAs", "ZIP-Code Targeting"],
+        accent: "teal"
     },
     {
         icon: (
@@ -18,9 +18,9 @@ const services = [
                 <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
             </svg>
         ),
-        title: "Email & Automation",
-        description: "Full lifecycle email marketing with smart segmentation, behaviour-triggered sequences, and A/B testing — built in Klaviyo, Mailchimp, or HubSpot.",
-        tags: ["Klaviyo", "Mailchimp", "HubSpot", "Drip Campaigns"],
+        title: "Intake Speed Automation",
+        description: "Smart SMS and email auto-responders that follow up with new leads within 5 minutes. We connect inquiries directly to your front desk CRM so no prospective patient gets left behind.",
+        tags: ["Instant Callbacks", "SMS Lead Nurture", "EHR Syncing", "GoHighLevel CRM"],
         accent: "blue"
     },
     {
@@ -31,9 +31,9 @@ const services = [
                 <path d="M2 12l10 5 10-5" />
             </svg>
         ),
-        title: "Funnel & CRO",
-        description: "End-to-end funnel architecture — landing pages, VSL pages, order bumps, upsells. Every touchpoint is optimised to maximise conversion at every stage.",
-        tags: ["Landing Pages", "A/B Testing", "Conversion Rate", "ClickFunnels"],
+        title: "HIPAA-Compliant Funnels",
+        description: "High-converting landing pages that verify candidate suitability and insurance coverage while fully adhering to patient privacy guidelines. Maximizing consultation bookings safely.",
+        tags: ["Secure Forms", "Patient Verification", "CRO Audit", "Intake Flow Design"],
         accent: "purple"
     },
     {
@@ -43,19 +43,19 @@ const services = [
                 <line x1="21" y1="21" x2="16.65" y2="16.65" />
             </svg>
         ),
-        title: "SEO & Content",
-        description: "Data-driven SEO strategy — technical audits, keyword clusters, and content that ranks AND converts. Built for long-term organic growth.",
-        tags: ["Technical SEO", "Content Marketing", "Link Building", "Analytics"],
+        title: "Local SEO & Reputation",
+        description: "Optimizing Google Business Profiles and launching patient review acquisition loops. Command Google Map searches to ensure your clinic is the top local choice for vein and pain relief.",
+        tags: ["Google Maps SEO", "Review Acquisition", "Medical Content", "Patient Psychology Copy"],
         accent: "green"
     }
 ];
 
 const accentMap = {
-    orange: {
-        border: "hover:border-orange-500/40",
-        shadow: "hover:shadow-orange-500/10",
-        icon: "text-orange-400 bg-orange-500/10 border-orange-500/20",
-        tag: "bg-orange-500/10 text-orange-400/70 border-orange-500/10",
+    teal: {
+        border: "hover:border-teal-500/40",
+        shadow: "hover:shadow-teal-500/10",
+        icon: "text-teal-400 bg-teal-500/10 border-teal-500/20",
+        tag: "bg-teal-500/10 text-teal-400/70 border-teal-500/10",
     },
     blue: {
         border: "hover:border-blue-500/40",
@@ -87,7 +87,7 @@ const Services = () => {
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="inline-block px-3 py-1 text-xs font-medium tracking-widest uppercase text-orange-400 bg-orange-500/10 border border-orange-500/20 rounded-full mb-4"
+                        className="inline-block px-3 py-1 text-xs font-medium tracking-widest uppercase text-teal-400 bg-teal-500/10 border border-teal-500/20 rounded-full mb-4"
                     >
                         What I Do
                     </motion.span>

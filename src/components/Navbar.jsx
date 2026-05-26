@@ -22,15 +22,17 @@ const Navbar = () => {
             >
                 <div className="mx-auto max-w-full">
                     <div className="flex justify-between items-center h-16">
-                        {/* Logo - Handwritten Style */}
-                        <Link to="/" className="relative group">
-                            <span
-                                className="text-xl md:text-2xl font-light bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent transition-all duration-300 group-hover:from-blue-400 group-hover:to-purple-400"
-                                style={{ fontFamily: 'Brush Script MT, cursive' }}
-                            >
-                                Awab Ali.
-                            </span>
-                            <div className="absolute -inset-2 bg-gradient-to-r from-blue-500/0 via-blue-500/20 to-purple-500/0 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500"></div>
+                        {/* Logo - Modern B2B Clinic Growth Style */}
+                        <Link to="/" className="relative group flex items-center">
+                            <div className="flex items-center gap-2">
+                                <span className="text-lg md:text-xl font-bold tracking-tight text-white transition-colors duration-300 group-hover:text-teal-400">
+                                    AWAB <span className="text-teal-500 group-hover:text-teal-300">ALI</span>
+                                </span>
+                                <span className="hidden sm:inline-block text-[9px] uppercase tracking-widest font-semibold px-2 py-0.5 rounded border border-teal-500/30 bg-teal-500/10 text-teal-300">
+                                    CLINIC GROWTH
+                                </span>
+                            </div>
+                            <div className="absolute -inset-2 bg-gradient-to-r from-teal-500/0 via-teal-500/10 to-emerald-500/0 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500"></div>
                         </Link>
 
                         {/* Desktop Navigation */}
@@ -55,17 +57,16 @@ const Navbar = () => {
                                 >
                                     <span className="relative z-10">{item.label}</span>
                                     <div className="absolute inset-0 bg-white/5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                    <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-amber-400 group-hover:w-3/4 transition-all duration-300"></div>
+                                    <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-teal-500 to-emerald-400 group-hover:w-3/4 transition-all duration-300"></div>
                                 </a>
                             ))}
 
                             {/* Contact Button */}
                             <button
                                 onClick={() => setIsContactOpen(true)}
-                                className="relative px-6 py-2 ml-2 text-sm font-medium text-white bg-white/10 hover:bg-white/20 rounded-full transition-all border border-white/10 hover:border-white/20 group overflow-hidden"
+                                className="relative px-6 py-2 ml-2 text-sm font-semibold text-white bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full hover:opacity-90 transition-all shadow-md shadow-teal-500/10 hover:shadow-teal-500/25 cursor-pointer"
                             >
-                                <span className="relative z-10">Get in Touch</span>
-                                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                Schedule 15-Min Call
                             </button>
                         </div>
 
@@ -114,9 +115,9 @@ const Navbar = () => {
                                     setIsContactOpen(true);
                                     setIsMobileMenuOpen(false);
                                 }}
-                                className="w-full text-left px-4 py-3 text-sm text-blue-400 font-medium hover:bg-white/5 rounded-lg transition-colors"
+                                className="w-full text-left px-4 py-3 text-sm text-teal-400 font-semibold hover:bg-white/5 rounded-lg transition-colors"
                             >
-                                Get in Touch
+                                Schedule 15-Min Call
                             </button>
                         </div>
                     </motion.div>

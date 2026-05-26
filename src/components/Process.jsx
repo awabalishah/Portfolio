@@ -3,39 +3,39 @@ import { motion } from 'framer-motion';
 const processSteps = [
     {
         number: "01",
-        title: "Audit & Research",
-        description: "Deep-dive into your current funnel, ad accounts, analytics, and competitors to pinpoint exactly where money is being left on the table.",
-        accent: "text-orange-500"
+        title: "Clinic Diagnostic & Audit",
+        description: "We analyze localized search volume for vein & pain treatments in your ZIP codes and audit competitor ad strategies to locate exactly where patient opportunities are lost.",
+        accent: "text-teal-500"
     },
     {
         number: "02",
-        title: "Strategy & Positioning",
-        description: "Custom growth roadmap with clear channel mix, messaging, targeting, and KPI targets — built around your specific business model and goals.",
-        accent: "text-orange-500"
+        title: "Treatment Journey Mapping",
+        description: "We align high-value procedures (e.g., varicose vein removal, joint pain relief, regenerative wellness) with targeted demographic searches to construct patient journeys.",
+        accent: "text-teal-500"
     },
     {
         number: "03",
-        title: "Campaign Build",
-        description: "Creating ads, landing pages, email sequences, and automations. Every asset is conversion-optimised before anything goes live.",
-        accent: "text-orange-500"
+        title: "HIPAA-Compliant Build",
+        description: "We build secure landing pages, interactive diagnostic funnel questionnaires, and ad creatives designed to vet prospective patients while preserving privacy.",
+        accent: "text-teal-500"
     },
     {
         number: "04",
-        title: "Multi-Channel Launch",
-        description: "Coordinated go-live across paid, organic, and email — timed for maximum impact and with contingency tracking in place from day one.",
-        accent: "text-orange-500"
+        title: "Hyper-Local Launch",
+        description: "We deploy Google Search Ads, local Map Pack SEO, and local Meta Ads within a tight 15-30 mile radius around your physical clinic locations.",
+        accent: "text-teal-500"
     },
     {
         number: "05",
-        title: "Track & Analyse",
-        description: "Real-time dashboards, attribution modelling, and weekly reporting so you always know exactly what's performing and why.",
-        accent: "text-orange-500"
+        title: "Front-Desk CRM Syncing",
+        description: "We connect lead captures directly to your staff's scheduling console (GoHighLevel, EHRs) and configure instant SMS alerts for rapid intake callback.",
+        accent: "text-teal-500"
     },
     {
         number: "06",
-        title: "Scale & Optimise",
-        description: "Double down on winning campaigns, cut losers fast, and systematically scale revenue — continuous iteration driven by data.",
-        accent: "text-orange-500"
+        title: "Intake Audit & Scaling",
+        description: "We track response times, optimize scripts for front desk booking rates, and scale budgets targeting the highest-converting geographic zones.",
+        accent: "text-teal-500"
     }
 ];
 
@@ -49,7 +49,7 @@ const Process = () => {
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="inline-block px-3 py-1 text-xs font-medium tracking-widest uppercase text-orange-400 bg-orange-500/10 border border-orange-500/20 rounded-full mb-4"
+                        className="inline-block px-3 py-1 text-xs font-medium tracking-widest uppercase text-teal-400 bg-teal-500/10 border border-teal-500/20 rounded-full mb-4"
                     >
                         How I Work
                     </motion.span>
@@ -79,7 +79,7 @@ const Process = () => {
                                     {step.number}
                                 </span>
                                 <div className="pt-1">
-                                    <h3 className="text-xl font-semibold mb-2 group-hover:text-orange-300 transition-colors duration-300">{step.title}</h3>
+                                    <h3 className="text-xl font-semibold mb-2 group-hover:text-teal-300 transition-colors duration-300">{step.title}</h3>
                                     <p className="text-gray-400 leading-relaxed text-sm">
                                         {step.description}
                                     </p>
