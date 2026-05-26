@@ -50,15 +50,15 @@ const StatCard = ({ stat, index }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-40px' }}
             transition={{ duration: 0.55, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="relative flex flex-col items-center text-center p-6 md:p-8 rounded-2xl bg-gradient-to-br from-zinc-900/60 to-zinc-800/40 border border-white/[0.07] hover:border-teal-500/30 transition-all group"
+            className="relative flex flex-col items-center text-center p-4 md:p-6 rounded-2xl bg-gradient-to-br from-zinc-900/60 to-zinc-800/40 border border-white/[0.07] hover:border-teal-500/30 transition-all group"
         >
             {/* Glow */}
             <div className="absolute inset-0 rounded-2xl bg-teal-500/0 group-hover:bg-teal-500/[0.04] transition-colors duration-500 pointer-events-none"></div>
 
-            <div className="text-4xl md:text-5xl font-bold mb-1 shimmer-gradient tabular-nums leading-none">
+            <div className="text-3xl md:text-4xl font-bold mb-1 shimmer-gradient tabular-nums leading-none">
                 {displayPrefix}{displayValue}{stat.suffix}
             </div>
-            <div className="text-base md:text-lg font-semibold text-white mb-1">{stat.label}</div>
+            <div className="text-sm md:text-base font-semibold text-white mb-1">{stat.label}</div>
             <div className="text-xs text-gray-500">{stat.description}</div>
         </motion.div>
     );
@@ -67,7 +67,7 @@ const StatCard = ({ stat, index }) => {
 const Results = () => {
     return (
         <section id="results" className="py-16 md:py-20 px-4">
-            <div className="container max-w-4xl mx-auto px-4 md:px-8">
+            <div className="container max-w-5xl mx-auto px-4 md:px-8">
                 {/* Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
