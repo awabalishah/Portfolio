@@ -1,5 +1,6 @@
 import Hero from '../components/Hero';
 import Results from '../components/Results';
+import VideoTestimonial from '../components/VideoTestimonial';
 import RoiCalculator from '../components/RoiCalculator';
 import Services from '../components/Services';
 import Process from '../components/Process';
@@ -13,6 +14,7 @@ const Home = () => {
         <>
             <Hero />
             <Results />
+            <VideoTestimonial />
             <RoiCalculator />
             <Services />
             <Process />
