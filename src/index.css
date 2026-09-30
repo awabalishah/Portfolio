@@ -22,6 +22,10 @@
   --spacing-xl: 5rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
