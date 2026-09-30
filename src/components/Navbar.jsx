@@ -23,7 +23,7 @@ const Navbar = () => {
                             AWAB <span className="text-sage-600">ALI</span>
                         </span>
                         <span className="hidden sm:inline-block text-[9px] uppercase tracking-widest font-semibold px-2 py-0.5 rounded-full bg-sage-100 text-sage-800">
-                            GHL &amp; FUNNELS
+                            MEDIA BUYER
                         </span>
                     </div>
                 </Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
                     href="/#book"
                     className="px-4 md:px-5 py-2 text-xs md:text-sm font-semibold text-cream bg-sage-700 hover:bg-sage-800 rounded-full transition-colors whitespace-nowrap"
                 >
-                    Book a Call
+                    Let's Talk
                 </a>
             </div>
         </motion.nav>

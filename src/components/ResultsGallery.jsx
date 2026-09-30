@@ -49,12 +49,12 @@ const ResultsGallery = () => {
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-12">
                     <div className="max-w-xl">
-                        <span className="eyebrow mb-4">Client Results</span>
+                        <span className="eyebrow mb-4">Campaign Results</span>
                         <h2 className="text-3xl md:text-5xl">
-                            Real clients. <span className="accent">Real bookings.</span>
+                            Real accounts. <span className="accent">Real numbers.</span>
                         </h2>
                         <p className="text-base md:text-lg mt-4">
-                            Straight from the ad accounts and inboxes of clients we work with.
+                            Screenshots from ad accounts I have managed, and a message from one of the clients.
                         </p>
                     </div>
                     <div className="hidden md:flex gap-2">

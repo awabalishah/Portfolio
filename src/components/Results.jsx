@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 
 const stats = [
-    { value: '< 2 min', label: 'Lead response time', description: 'Automated SMS & email follow-up in GHL' },
+    { value: '$105', label: 'Cost per booked appointment', description: 'Meta campaign, August 2025' },
     { value: '3.8x', label: 'Average return on ad spend', description: 'Across Meta & Google campaigns' },
-    { value: '24/7', label: 'Follow-up on autopilot', description: 'Nurture, reminders and booking without manual work' },
+    { value: '< 2 min', label: 'Lead follow-up time', description: 'Automated in GoHighLevel' },
 ];
 
-// Quick proof strip that sits right under the VSL.
+// Quick proof strip that sits right under the intro video.
 const Results = () => {
     return (
         <section className="px-4 pb-20 md:pb-28">

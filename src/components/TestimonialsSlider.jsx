@@ -124,11 +124,11 @@ const TestimonialsSlider = () => {
     const jump = (i) => setState(([cur]) => [i, i > cur ? 1 : -1]);
 
     return (
-        <section id="testimonials" className="py-20 md:py-28 px-4 scroll-mt-20">
+        <section id="testimonials" className="py-20 md:py-28 px-4 bg-sand scroll-mt-20">
             <div className="max-w-5xl mx-auto">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-12">
                     <div className="max-w-xl">
-                        <span className="eyebrow mb-4">Testimonials</span>
+                        <span className="eyebrow mb-4">What Clients Say</span>
                         <h2 className="text-3xl md:text-5xl">
                             In their <span className="accent">own words.</span>
                         </h2>
@@ -183,7 +183,7 @@ const TestimonialsSlider = () => {
                 )}
 
                 <div className="text-center mt-12">
-                    <a href="#book" className="btn-primary">Book your strategy call</a>
+                    <a href="#book" className="btn-primary">Book an interview</a>
                 </div>
             </div>
         </section>

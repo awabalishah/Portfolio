@@ -1,27 +1,15 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
-import VslPlayer, { isFileVideo } from './VslPlayer';
-import { VSL_VIDEO_SRC, VSL_POSTER, CTA_REVEAL_SECONDS } from '../config/vsl';
+import { motion } from 'framer-motion';
+import VslPlayer from './VslPlayer';
+import { VSL_VIDEO_SRC, VSL_POSTER, RESUME_URL } from '../config/vsl';
 
 const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } }
 };
 
-const trustPoints = [
-    'GoHighLevel expert',
-    'Funnels, automations & paid ads',
-    'Leads followed up in under 2 minutes',
-];
+const channels = ['Meta Ads', 'Google Ads', 'GoHighLevel', 'Funnels', 'Automations'];
 
 const VslHero = () => {
-    const gated = CTA_REVEAL_SECONDS > 0 && isFileVideo(VSL_VIDEO_SRC);
-    const [ctaVisible, setCtaVisible] = useState(!gated);
-
-    const handleWatchTime = (seconds) => {
-        if (!ctaVisible && seconds >= CTA_REVEAL_SECONDS) setCtaVisible(true);
-    };
-
     return (
         <section className="relative pt-32 md:pt-40 pb-16 md:pb-24 px-4 overflow-hidden">
             <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] rounded-full bg-sage-100/70 blur-[120px] pointer-events-none"></div>
@@ -33,61 +21,72 @@ const VslHero = () => {
                 variants={{ visible: { transition: { staggerChildren: 0.1, delayChildren: 0.05 } } }}
                 className="relative max-w-4xl mx-auto flex flex-col items-center text-center"
             >
+                <motion.div variants={itemVariants} className="flex items-center gap-3 mb-8">
+                    <img
+                        src="/Profile-picture-website.jpg"
+                        alt="Awab Ali Shah"
+                        className="w-12 h-12 rounded-full object-cover object-top border-2 border-paper shadow-soft"
+                    />
+                    <div className="text-left">
+                        <div className="font-display text-sm font-semibold text-ink">Awab Ali Shah</div>
+                        <div className="flex items-center gap-1.5 text-xs text-sage-700 font-medium">
+                            <span className="relative flex h-2 w-2">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sage-400 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-sage-600"></span>
+                            </span>
+                            Open to full-time &amp; contract roles
+                        </div>
+                    </div>
+                </motion.div>
+
                 <motion.span variants={itemVariants} className="eyebrow mb-6">
-                    <span className="w-1.5 h-1.5 rounded-full bg-sage-600"></span>
-                    GoHighLevel Automation & Funnel Expert
+                    Media Buyer · Meta &amp; Google Ads
                 </motion.span>
 
                 <motion.h1
                     variants={itemVariants}
                     className="text-[2.1rem] md:text-6xl lg:text-[4rem] mb-6"
                 >
-                    GHL funnels and automations that turn your leads into{' '}
-                    <span className="accent">booked calls.</span>
+                    A media buyer who also builds{' '}
+                    <span className="accent">what happens after the click.</span>
                 </motion.h1>
 
                 <motion.p
                     variants={itemVariants}
                     className="text-base md:text-lg leading-relaxed mb-10 md:mb-12 max-w-2xl"
                 >
-                    Watch this short video to see how I build GoHighLevel funnels, automate your follow-up, and run the paid ads that fill your calendar, so you stop chasing every lead by hand.
+                    I plan, launch and scale Meta and Google campaigns, then build the GoHighLevel funnels and follow-up automations that turn those clicks into booked calls. Watch my short intro to see how I work.
                 </motion.p>
 
                 <motion.div variants={itemVariants} className="w-full max-w-3xl">
-                    <VslPlayer src={VSL_VIDEO_SRC} poster={VSL_POSTER} onWatchTime={handleWatchTime} />
+                    <VslPlayer src={VSL_VIDEO_SRC} poster={VSL_POSTER} />
                 </motion.div>
 
-                <div className="min-h-[150px] mt-10 flex flex-col items-center">
-                    <AnimatePresence>
-                        {ctaVisible && (
-                            <motion.div
-                                initial={{ opacity: 0, y: 12 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                                className="flex flex-col items-center"
-                            >
-                                <a href="#book" className="btn-primary !px-9 !py-4 !text-base md:!text-lg">
-                                    Book Your Free Strategy Call
-                                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <path d="M5 12h14M13 6l6 6-6 6" />
-                                    </svg>
-                                </a>
-                                <p className="text-sm text-mute mt-3">15 minutes. No pitch deck. Just a look at where your leads are slipping through.</p>
-                            </motion.div>
-                        )}
-                    </AnimatePresence>
+                <motion.div variants={itemVariants} className="flex flex-wrap justify-center gap-3 mt-10">
+                    <a href="#book" className="btn-primary !px-8 !py-4 !text-base">
+                        Book an Interview
+                        <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M5 12h14M13 6l6 6-6 6" />
+                        </svg>
+                    </a>
+                    {RESUME_URL ? (
+                        <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className="btn-ghost !px-7 !py-4 !text-base">
+                            Download Resume
+                        </a>
+                    ) : (
+                        <a href="#results" className="btn-ghost !px-7 !py-4 !text-base">
+                            See Campaign Results
+                        </a>
+                    )}
+                </motion.div>
 
-                    <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-7">
-                        {trustPoints.map((point) => (
-                            <li key={point} className="flex items-center gap-2 text-sm text-body">
-                                <svg className="w-4 h-4 text-sage-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M20 6L9 17l-5-5" />
-                                </svg>
-                                {point}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                <motion.ul variants={itemVariants} className="flex flex-wrap justify-center gap-2 mt-8">
+                    {channels.map((channel) => (
+                        <li key={channel} className="px-3 py-1 rounded-full border border-line bg-paper text-xs md:text-sm text-body">
+                            {channel}
+                        </li>
+                    ))}
+                </motion.ul>
             </motion.div>
         </section>
     );

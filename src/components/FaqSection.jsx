@@ -3,28 +3,28 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const faqs = [
     {
-        question: "Do I need a GoHighLevel account already?",
-        answer: "No. I can set up a new GHL account for you or work inside the one you already have. If you are moving over from another tool like ClickFunnels, HubSpot or Calendly, I can migrate your contacts, pipelines and calendars."
+        question: "What kind of role are you looking for?",
+        answer: "A media buying role where I manage Meta and Google ad accounts, at an agency or in-house. I'm open to full-time, part-time and contract positions, working remotely."
     },
     {
-        question: "What can you automate in GoHighLevel?",
-        answer: "Lead follow-up by SMS and email, missed-call text back, appointment booking and reminders, pipeline updates, review requests, reactivation campaigns for old leads, and alerts for your team. If you are doing it by hand every week, it can probably be automated."
+        question: "Which ad platforms do you run?",
+        answer: "Meta (Facebook and Instagram) and Google Ads. That covers campaign setup, audiences, budgets, creative testing, conversion tracking with the Pixel and Conversions API, and reporting in GA4."
     },
     {
-        question: "Do you build the funnels too?",
-        answer: "Yes. I design and build landing pages, opt-in funnels, booking funnels and surveys inside GHL, connected to your calendar and CRM so every lead is tracked from the first click."
+        question: "Can you work inside our existing ad accounts and GoHighLevel?",
+        answer: "Yes. I can work in your agency's or your clients' ad accounts and GHL sub-accounts with whatever access you give me, and follow your naming conventions, processes and reporting setup."
     },
     {
-        question: "Do you also run the ads?",
-        answer: "Yes. I run Meta and Google ads that send traffic into your funnel, and track results all the way to booked calls and sales, so you can see what each lead and appointment actually costs."
+        question: "Do you handle ad creative?",
+        answer: "I write ad copy and creative briefs and plan the creative tests: which hooks, angles and formats to try and when to cut or scale them. I work closely with designers and video editors to get the assets made."
     },
     {
-        question: "How long does a build take?",
-        answer: "Most funnel and automation builds take 1 to 3 weeks, depending on scope. Ads can launch as soon as the funnel is live, and leads usually start coming in within the first few days."
+        question: "What do you report on?",
+        answer: "Spend, cost per lead, cost per booked call and return on ad spend, plus what changed that week and what I'm testing next. The goal is numbers the team can actually act on."
     },
     {
-        question: "What types of businesses do you work with?",
-        answer: "Any business that sells through calls or appointments: agencies, coaches and consultants, local service businesses, and more. If leads come in and someone has to follow up with them, this system works for you."
+        question: "Why does GoHighLevel experience matter for a media buyer?",
+        answer: "Because ads only pay off if the leads get followed up. I can tell when the real problem is the funnel or the follow-up rather than the ads, and fix it myself instead of just raising the budget."
     }
 ];
 
@@ -63,7 +63,7 @@ const FaqItem = ({ faq, index }) => {
 
 const FaqSection = () => {
     return (
-        <section id="faq" className="py-20 md:py-28 px-4">
+        <section id="faq" className="py-20 md:py-28 px-4 bg-sand">
             <div className="container max-w-4xl mx-auto px-4 md:px-8">
                 {/* Header */}
                 <div className="text-center mb-12">

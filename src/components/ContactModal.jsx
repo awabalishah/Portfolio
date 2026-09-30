@@ -8,14 +8,14 @@ const ContactModal = ({ isOpen, onClose }) => {
         businessName: '',
         email: '',
         phone: '',
-        specialty: 'Agency',
+        specialty: 'Full-time',
         message: ''
     });
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const subject = `Strategy Call: ${formData.specialty} - ${formData.businessName}`;
-        const body = `Name: ${formData.name}%0D%0ABusiness Name: %0D%0AEmail: ${formData.email}%0D%0APhone: ${formData.phone}%0D%0ABusiness Type: ${formData.specialty}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
+        const subject = `Role inquiry: ${formData.specialty} - ${formData.businessName}`;
+        const body = `Name: ${formData.name}%0D%0ACompany: ${formData.businessName}%0D%0AEmail: ${formData.email}%0D%0APhone: ${formData.phone}%0D%0ARole Type: ${formData.specialty}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
         window.location.href = `mailto:hey@awabalishah.com?subject=${subject}&body=${body}`;
         onClose();
     };
@@ -55,8 +55,8 @@ const ContactModal = ({ isOpen, onClose }) => {
                                 </svg>
                              </button>
 
-                            <h2 className="text-3xl mb-2">Book a 15-Min Call</h2>
-                            <p className="text-body mb-6">Let's look at your funnel, CRM and ads, and find where leads are slipping through.</p>
+                            <h2 className="text-3xl mb-2">Let's Talk</h2>
+                            <p className="text-body mb-6">Tell me about the role and I will get back to you.</p>
 
                             <form onSubmit={handleSubmit} className="space-y-4 max-h-[70vh] overflow-y-auto pr-1">
                                 <div>
@@ -73,7 +73,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                                 </div>
 
                                 <div>
-                                    <label className="block text-xs font-semibold uppercase tracking-wider text-mute mb-1.5">Business Name</label>
+                                    <label className="block text-xs font-semibold uppercase tracking-wider text-mute mb-1.5">Company</label>
                                     <input
                                         type="text"
                                         name="businessName"
@@ -81,7 +81,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                                         value={formData.businessName}
                                         onChange={handleChange}
                                         className="w-full px-4 py-2.5 bg-cream border border-line rounded-xl text-ink placeholder:text-mute focus:outline-none focus:border-sage-600 transition-colors text-sm"
-                                        placeholder="Acme Marketing"
+                                        placeholder="Acme Agency"
                                     />
                                 </div>
 
@@ -113,7 +113,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                                 </div>
 
                                 <div>
-                                    <label className="block text-xs font-semibold uppercase tracking-wider text-mute mb-1.5">Business Type</label>
+                                    <label className="block text-xs font-semibold uppercase tracking-wider text-mute mb-1.5">Role Type</label>
                                     <div className="relative">
                                         <select
                                             name="specialty"
@@ -122,12 +122,10 @@ const ContactModal = ({ isOpen, onClose }) => {
                                             className="w-full px-4 py-2.5 text-sm bg-cream border border-line rounded-xl text-ink placeholder:text-mute focus:outline-none focus:border-sage-600 transition-colors appearance-none cursor-pointer"
                                             
                                         >
-                                            <option value="Agency" className="bg-paper text-ink py-2">Agency</option>
-                                            <option value="Coach / Consultant" className="bg-paper text-ink py-2">Coach / Consultant</option>
-                                            <option value="Local Service Business" className="bg-paper text-ink py-2">Local Service Business</option>
-                                            <option value="E-commerce" className="bg-paper text-ink py-2">E-commerce</option>
-                                            <option value="SaaS" className="bg-paper text-ink py-2">SaaS</option>
-                                            <option value="Other" className="bg-paper text-ink py-2">Other</option>
+                                            <option value="Full-time" className="bg-paper text-ink py-2">Full-time</option>
+                                            <option value="Part-time" className="bg-paper text-ink py-2">Part-time</option>
+                                            <option value="Contract" className="bg-paper text-ink py-2">Contract</option>
+                                            <option value="Freelance project" className="bg-paper text-ink py-2">Freelance project</option>
                                         </select>
                                         <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-mute">
                                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -138,7 +136,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                                 </div>
 
                                 <div>
-                                    <label className="block text-xs font-semibold uppercase tracking-wider text-mute mb-1.5">Current Challenges / Goals</label>
+                                    <label className="block text-xs font-semibold uppercase tracking-wider text-mute mb-1.5">About the Role</label>
                                     <textarea
                                         name="message"
                                         required
@@ -146,7 +144,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                                         value={formData.message}
                                         onChange={handleChange}
                                         className="w-full px-4 py-2.5 bg-cream border border-line rounded-xl text-ink placeholder:text-mute focus:outline-none focus:border-sage-600 transition-colors resize-none text-sm"
-                                        placeholder="e.g., Leads come in from our ads but nobody follows up fast enough, and we want it automated in GHL..."
+                                        placeholder="e.g., We are hiring a media buyer to manage Meta ads for our agency clients..."
                                     ></textarea>
                                 </div>
 
@@ -154,7 +152,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                                     type="submit"
                                     className="btn-primary w-full !rounded-xl"
                                 >
-                                    Schedule My Diagnostic Call
+                                    Send Message
                                 </button>
                             </form>
                         </div>
