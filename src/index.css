@@ -52,3 +52,12 @@ a {
     @apply bg-paper border border-line rounded-3xl shadow-soft;
   }
 }
+
+@layer utilities {
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}

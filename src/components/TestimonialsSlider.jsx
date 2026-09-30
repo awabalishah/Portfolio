@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { results } from '../data/results';
+import { testimonials } from '../data/testimonials';
 
 // Draft slides show locally and on Vercel previews, never on the live site.
 const isLive = import.meta.env.VITE_VERCEL_ENV === 'production';
-const slides = results.filter((r) => !(r.draft && isLive));
+const slides = testimonials.filter((r) => !(r.draft && isLive));
 
 const slideVariants = {
     enter: (dir) => ({ opacity: 0, x: dir > 0 ? 60 : -60 }),
@@ -15,7 +15,7 @@ const slideVariants = {
 const Arrow = ({ direction, onClick }) => (
     <button
         onClick={onClick}
-        aria-label={direction === 'prev' ? 'Previous result' : 'Next result'}
+        aria-label={direction === 'prev' ? 'Previous testimonial' : 'Next testimonial'}
         className="w-11 h-11 rounded-full border border-line bg-paper text-ink flex items-center justify-center shadow-soft hover:border-sage-400 hover:text-sage-700 transition-colors cursor-pointer"
     >
         <svg className={`w-5 h-5 ${direction === 'prev' ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -114,7 +114,7 @@ const Slide = ({ result }) => {
     );
 };
 
-const ResultsSlider = () => {
+const TestimonialsSlider = () => {
     const [[index, direction], setState] = useState([0, 0]);
     const count = slides.length;
 
@@ -124,13 +124,13 @@ const ResultsSlider = () => {
     const jump = (i) => setState(([cur]) => [i, i > cur ? 1 : -1]);
 
     return (
-        <section id="results" className="py-20 md:py-28 px-4 bg-sand scroll-mt-20">
+        <section id="testimonials" className="py-20 md:py-28 px-4 scroll-mt-20">
             <div className="max-w-5xl mx-auto">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-12">
                     <div className="max-w-xl">
-                        <span className="eyebrow mb-4">Client Results</span>
+                        <span className="eyebrow mb-4">Testimonials</span>
                         <h2 className="text-3xl md:text-5xl">
-                            Real practices. <span className="accent">Real bookings.</span>
+                            In their <span className="accent">own words.</span>
                         </h2>
                     </div>
                     {count > 1 && (
@@ -175,7 +175,7 @@ const ResultsSlider = () => {
                             <button
                                 key={i}
                                 onClick={() => jump(i)}
-                                aria-label={`Go to result ${i + 1}`}
+                                aria-label={`Go to testimonial ${i + 1}`}
                                 className={`h-2 rounded-full transition-all cursor-pointer ${i === index ? 'w-8 bg-sage-700' : 'w-2 bg-ink/15 hover:bg-ink/30'}`}
                             />
                         ))}
@@ -183,11 +183,11 @@ const ResultsSlider = () => {
                 )}
 
                 <div className="text-center mt-12">
-                    <a href="#book" className="btn-primary">Get results like these</a>
+                    <a href="#book" className="btn-primary">Book your strategy call</a>
                 </div>
             </div>
         </section>
     );
 };
 
-export default ResultsSlider;
+export default TestimonialsSlider;
