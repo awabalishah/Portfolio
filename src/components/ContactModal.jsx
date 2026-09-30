@@ -8,7 +8,7 @@ const ContactModal = ({ isOpen, onClose }) => {
         clinicName: '',
         email: '',
         phone: '',
-        specialty: 'Vein Clinic',
+        specialty: 'Medical Practice',
         message: ''
     });
 
@@ -81,7 +81,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                                         value={formData.clinicName}
                                         onChange={handleChange}
                                         className="w-full px-4 py-2.5 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-teal-500 transition-colors text-sm"
-                                        placeholder="Vein & Vascular Center"
+                                        placeholder="Riverside Family Health"
                                     />
                                 </div>
 
@@ -113,7 +113,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                                 </div>
 
                                 <div>
-                                    <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">Clinic Specialization</label>
+                                    <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">Practice Type</label>
                                     <div className="relative">
                                         <select
                                             name="specialty"
@@ -122,10 +122,12 @@ const ContactModal = ({ isOpen, onClose }) => {
                                             className="w-full px-4 py-2.5 text-sm bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-teal-500 transition-colors appearance-none cursor-pointer"
                                             style={{ colorScheme: 'dark' }}
                                         >
-                                            <option value="Vein Clinic" className="bg-[#1a1a1a] text-white py-2">Vein Clinic</option>
-                                            <option value="Pain Clinic" className="bg-[#1a1a1a] text-white py-2">Pain Clinic</option>
-                                            <option value="Wellness Clinic" className="bg-[#1a1a1a] text-white py-2">Wellness Clinic</option>
-                                            <option value="Multi-Specialty Clinic" className="bg-[#1a1a1a] text-white py-2">Multi-Specialty Clinic</option>
+                                            <option value="Medical Practice" className="bg-[#1a1a1a] text-white py-2">Medical Practice</option>
+                                            <option value="Dental Practice" className="bg-[#1a1a1a] text-white py-2">Dental Practice</option>
+                                            <option value="Med Spa / Aesthetics" className="bg-[#1a1a1a] text-white py-2">Med Spa / Aesthetics</option>
+                                            <option value="Chiropractic / Physical Therapy" className="bg-[#1a1a1a] text-white py-2">Chiropractic / Physical Therapy</option>
+                                            <option value="Specialty Clinic" className="bg-[#1a1a1a] text-white py-2">Specialty Clinic</option>
+                                            <option value="Other" className="bg-[#1a1a1a] text-white py-2">Other</option>
                                         </select>
                                         <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
                                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -144,7 +146,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                                         value={formData.message}
                                         onChange={handleChange}
                                         className="w-full px-4 py-2.5 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-teal-500 transition-colors resize-none text-sm"
-                                        placeholder="e.g., We have open calendar slots and want to fill them with vein/pain patients through targeted ads..."
+                                        placeholder="e.g., We have open calendar slots and want to fill them with new patients through targeted ads..."
                                     ></textarea>
                                 </div>
 

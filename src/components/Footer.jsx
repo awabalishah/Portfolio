@@ -8,7 +8,7 @@ const Footer = () => {
                         <h3 className="text-2xl font-bold tracking-tight text-white mb-2">
                             AWAB <span className="text-teal-400">ALI</span>
                         </h3>
-                        <p className="text-gray-500 text-sm">Clinic Patient Acquisition & Growth Specialist</p>
+                        <p className="text-gray-500 text-sm">Healthcare Patient Acquisition & Growth Specialist</p>
                     </div>
 
                     <div className="flex flex-wrap justify-center gap-6">

@@ -5,7 +5,7 @@ const stats = [
     { value: 40, suffix: '+', prefix: '20-', label: 'Appointments Leak', description: 'Left on the table monthly before audit' },
     { value: 15, suffix: ' Min', prefix: '', label: 'Diagnostic Call', description: 'To pinpoint calendar leaks' },
     { value: 3.8, suffix: 'x', prefix: '', label: 'Average ROAS', description: 'Return on ad spend for high-value treatments' },
-    { value: 180, suffix: 'K+', prefix: '+$', label: 'Revenue Opportunity', description: 'Avg. yearly value added per clinic' },
+    { value: 180, suffix: 'K+', prefix: '+$', label: 'Revenue Opportunity', description: 'Avg. yearly value added per practice' },
 ];
 
 const useCountUp = (target, duration = 1800, shouldStart) => {
@@ -80,7 +80,7 @@ const Results = () => {
                         Proven Outcomes
                     </span>
                     <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
-                        Measurable patient acquisition for clinics
+                        Measurable patient acquisition for healthcare practices
                     </h2>
                     <p className="text-gray-500 text-sm mt-3 max-w-md mx-auto">
                         Actual results driven through targeted local search and social advertising campaigns.

@@ -11,12 +11,12 @@ const faqs = [
         answer: "Typically within 14 to 21 days. The first 10-14 days are spent auditing your geographic search volume, building secure landing pages, writing ads, and setting up integrations. Once campaigns launch, qualified patient inquiries generally begin coming in within the first 48 hours."
     },
     {
-        question: "Does this integrate with our existing clinic EHR or scheduling software?",
+        question: "Does this integrate with our existing EHR or scheduling software?",
         answer: "Yes. We connect leads and forms with popular patient appointment portals (Zocdoc, PatientPop, etc.) or clinic CRMs. We can configure automated webhooks to sync contacts directly or set up secure instant SMS alerts for your front desk receptionist."
     },
     {
         question: "How do we filter out unqualified leads or bad insurance?",
-        answer: "We build custom candidate pre-screening questionnaires inside the landing page flow. Before requesting an appointment, prospects must verify their treatment need (e.g., vascular pain, leg swelling, back pain) and submit their insurance provider. This filters out low-intent inquiries automatically."
+        answer: "We build custom candidate pre-screening questionnaires inside the landing page flow. Before requesting an appointment, prospects must verify their treatment need (the condition or service they need) and submit their insurance provider. This filters out low-intent inquiries automatically."
     },
     {
         question: "What is your speed-to-lead automation?",

@@ -9,7 +9,7 @@ const itemVariants = {
 };
 
 const trustPoints = [
-    'Built only for US vein & pain clinics',
+    'Built only for US healthcare practices',
     'HIPAA-compliant funnels',
     'Patients booked in 14–21 days',
 ];
@@ -38,7 +38,7 @@ const VslHero = () => {
                 >
                     <span className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse"></span>
                     <span className="text-[11px] md:text-xs font-medium text-teal-300 tracking-wide uppercase">
-                        For US Vein & Pain Clinic Owners
+                        For US Healthcare Practice Owners
                     </span>
                 </motion.div>
 
@@ -56,7 +56,7 @@ const VslHero = () => {
                     variants={itemVariants}
                     className="text-sm md:text-lg text-gray-400 leading-relaxed mb-8 md:mb-10 max-w-2xl"
                 >
-                    Watch this short video to see the exact ad and follow-up system we use, and why most clinics lose patients before the front desk ever calls them back.
+                    Watch this short video to see the exact ad and follow-up system we use, and why most practices lose patients before the front desk ever calls them back.
                 </motion.p>
 
                 <motion.div variants={itemVariants} className="w-full max-w-3xl">
