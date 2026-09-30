@@ -36,7 +36,21 @@ const Media = ({ media }) => {
             />
         );
     }
-    return <img src={media.src} alt="" className="w-full h-full object-cover object-top" loading="lazy" />;
+    // Proof screenshots are shown whole (never cropped) and open full size on click.
+    return (
+        <a href={media.src} target="_blank" rel="noopener noreferrer" className="group relative block w-full h-full p-4 md:p-6" draggable={false}>
+            <img
+                src={media.src}
+                alt={media.alt || ''}
+                className="w-full h-full object-contain rounded-xl"
+                loading="lazy"
+                draggable={false}
+            />
+            <span className="absolute bottom-3 right-3 px-2.5 py-1 rounded-full bg-paper/90 text-[11px] font-medium text-body shadow-soft opacity-0 group-hover:opacity-100 transition-opacity">
+                View full size
+            </span>
+        </a>
+    );
 };
 
 const Slide = ({ result }) => {
@@ -45,7 +59,7 @@ const Slide = ({ result }) => {
     return (
         <div className={`card overflow-hidden grid ${hasMedia ? 'md:grid-cols-2' : ''}`}>
             {hasMedia && (
-                <div className="aspect-[4/3] md:aspect-auto md:min-h-[440px] bg-sand">
+                <div className="h-[360px] md:h-auto md:min-h-[480px] bg-sand/70 border-b md:border-b-0 md:border-r border-line">
                     <Media media={result.media} />
                 </div>
             )}
@@ -57,7 +71,17 @@ const Slide = ({ result }) => {
                     </span>
                 )}
 
-                <h3 className="text-2xl md:text-[1.9rem] mb-5">{result.headline}</h3>
+                {result.period && (
+                    <span className="self-start mb-4 text-xs font-semibold uppercase tracking-[0.12em] text-sage-600">
+                        {result.period}
+                    </span>
+                )}
+
+                <h3 className="text-2xl md:text-[1.9rem] mb-4">{result.headline}</h3>
+
+                {result.summary && (
+                    <p className="text-base leading-relaxed mb-6">{result.summary}</p>
+                )}
 
                 {result.quote && (
                     <blockquote className="font-serif italic text-lg md:text-xl leading-relaxed text-body mb-8">
@@ -68,8 +92,8 @@ const Slide = ({ result }) => {
                 {result.metrics?.length > 0 && (
                     <div className={`grid gap-3 mb-8 ${result.metrics.length === 3 ? 'grid-cols-3' : 'grid-cols-2'}`}>
                         {result.metrics.map((m) => (
-                            <div key={m.label} className="rounded-2xl bg-sage-50 border border-sage-100 px-4 py-3">
-                                <div className="font-display text-2xl md:text-3xl font-semibold text-sage-700 tabular-nums">{m.value}</div>
+                            <div key={m.label} className="rounded-2xl bg-sage-50 border border-sage-100 px-3 sm:px-4 py-3">
+                                <div className="font-display text-lg sm:text-2xl md:text-3xl font-semibold text-sage-700 tabular-nums">{m.value}</div>
                                 <div className="text-xs text-mute mt-0.5 leading-snug">{m.label}</div>
                             </div>
                         ))}
@@ -78,7 +102,7 @@ const Slide = ({ result }) => {
 
                 <div className="mt-auto flex items-center gap-3 pt-5 border-t border-line">
                     <div className="w-10 h-10 rounded-full bg-sage-100 text-sage-700 flex items-center justify-center font-display font-semibold shrink-0">
-                        {result.client.replace(/[^A-Za-z]/g, '').charAt(0) || '•'}
+                        {result.client.replace(/[^A-Za-z]/g, '').charAt(0).toUpperCase() || '•'}
                     </div>
                     <div>
                         <div className="text-sm font-semibold text-ink">{result.client}</div>
