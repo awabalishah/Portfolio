@@ -14,7 +14,7 @@ const Footer = () => {
                     <div className="font-display text-lg font-bold tracking-tight text-ink">
                         AWAB <span className="text-sage-600">ALI</span>
                     </div>
-                    <p className="text-sm text-mute mt-1">Patient acquisition for US healthcare practices</p>
+                    <p className="text-sm text-mute mt-1">GoHighLevel automations, funnels &amp; paid ads</p>
                 </div>
 
                 <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">

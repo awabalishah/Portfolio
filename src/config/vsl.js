@@ -4,7 +4,7 @@
 // Accepts either:
 //   - a file in /public, e.g. '/vsl.mp4'
 //   - a YouTube / Vimeo / Wistia / Loom link, e.g. 'https://youtu.be/abc123'
-export const VSL_VIDEO_SRC = 'https://www.loom.com/share/aecc51cb9fc4409484e59c7b30fe0ab8';
+export const VSL_VIDEO_SRC = '';
 
 // Optional thumbnail shown before an MP4 starts playing, e.g. '/vsl-poster.jpg'.
 export const VSL_POSTER = '';

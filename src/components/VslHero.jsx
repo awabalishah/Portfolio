@@ -9,9 +9,9 @@ const itemVariants = {
 };
 
 const trustPoints = [
-    'Built only for US healthcare practices',
-    'HIPAA-compliant funnels',
-    'Patients booked in 14–21 days',
+    'GoHighLevel expert',
+    'Funnels, automations & paid ads',
+    'Leads followed up in under 2 minutes',
 ];
 
 const VslHero = () => {
@@ -35,22 +35,22 @@ const VslHero = () => {
             >
                 <motion.span variants={itemVariants} className="eyebrow mb-6">
                     <span className="w-1.5 h-1.5 rounded-full bg-sage-600"></span>
-                    For US Healthcare Practice Owners
+                    GoHighLevel Automation & Funnel Expert
                 </motion.span>
 
                 <motion.h1
                     variants={itemVariants}
                     className="text-[2.1rem] md:text-6xl lg:text-[4rem] mb-6"
                 >
-                    Add 20–40 new patient appointments{' '}
-                    <span className="accent">to your calendar every month.</span>
+                    GHL funnels and automations that turn your leads into{' '}
+                    <span className="accent">booked calls.</span>
                 </motion.h1>
 
                 <motion.p
                     variants={itemVariants}
                     className="text-base md:text-lg leading-relaxed mb-10 md:mb-12 max-w-2xl"
                 >
-                    Watch this short video to see the exact ad and follow-up system we use, and why most practices lose patients before the front desk ever calls them back.
+                    Watch this short video to see how I build GoHighLevel funnels, automate your follow-up, and run the paid ads that fill your calendar, so you stop chasing every lead by hand.
                 </motion.p>
 
                 <motion.div variants={itemVariants} className="w-full max-w-3xl">
@@ -72,7 +72,7 @@ const VslHero = () => {
                                         <path d="M5 12h14M13 6l6 6-6 6" />
                                     </svg>
                                 </a>
-                                <p className="text-sm text-mute mt-3">15 minutes. No pitch deck. Just a look at where your calendar is leaking.</p>
+                                <p className="text-sm text-mute mt-3">15 minutes. No pitch deck. Just a look at where your leads are slipping through.</p>
                             </motion.div>
                         )}
                     </AnimatePresence>

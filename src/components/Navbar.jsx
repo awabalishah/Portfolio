@@ -23,7 +23,7 @@ const Navbar = () => {
                             AWAB <span className="text-sage-600">ALI</span>
                         </span>
                         <span className="hidden sm:inline-block text-[9px] uppercase tracking-widest font-semibold px-2 py-0.5 rounded-full bg-sage-100 text-sage-800">
-                            PRACTICE GROWTH
+                            GHL &amp; FUNNELS
                         </span>
                     </div>
                 </Link>

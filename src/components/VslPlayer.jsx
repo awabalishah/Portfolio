@@ -45,7 +45,7 @@ const EmbedPlayer = ({ src }) => (
     <Frame>
         <iframe
             src={src}
-            title="Video: how I fill clinic calendars"
+            title="Video: how I turn leads into booked calls"
             className="absolute inset-0 w-full h-full"
             allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
             allowFullScreen

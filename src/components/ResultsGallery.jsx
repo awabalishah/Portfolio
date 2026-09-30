@@ -51,10 +51,10 @@ const ResultsGallery = () => {
                     <div className="max-w-xl">
                         <span className="eyebrow mb-4">Client Results</span>
                         <h2 className="text-3xl md:text-5xl">
-                            Real practices. <span className="accent">Real bookings.</span>
+                            Real clients. <span className="accent">Real bookings.</span>
                         </h2>
                         <p className="text-base md:text-lg mt-4">
-                            Straight from the ad accounts and inboxes of clinics we work with.
+                            Straight from the ad accounts and inboxes of clients we work with.
                         </p>
                     </div>
                     <div className="hidden md:flex gap-2">

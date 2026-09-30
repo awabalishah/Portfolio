@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
 const stats = [
-    { value: '20–40', label: 'New appointments a month', description: 'Typically left on the table before we start' },
-    { value: '3.8x', label: 'Average return on ad spend', description: 'On high-value treatments' },
-    { value: '$180K+', label: 'Added revenue opportunity', description: 'Average per practice, per year' },
+    { value: '< 2 min', label: 'Lead response time', description: 'Automated SMS & email follow-up in GHL' },
+    { value: '3.8x', label: 'Average return on ad spend', description: 'Across Meta & Google campaigns' },
+    { value: '24/7', label: 'Follow-up on autopilot', description: 'Nurture, reminders and booking without manual work' },
 ];
 
 // Quick proof strip that sits right under the VSL.

@@ -5,17 +5,17 @@ import { createPortal } from 'react-dom';
 const ContactModal = ({ isOpen, onClose }) => {
     const [formData, setFormData] = useState({
         name: '',
-        clinicName: '',
+        businessName: '',
         email: '',
         phone: '',
-        specialty: 'Medical Practice',
+        specialty: 'Agency',
         message: ''
     });
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const subject = `Clinic Strategy Call: ${formData.specialty} - ${formData.clinicName}`;
-        const body = `Name: ${formData.name}%0D%0AClinic Name: ${formData.clinicName}%0D%0AEmail: ${formData.email}%0D%0APhone: ${formData.phone}%0D%0ASpecialty: ${formData.specialty}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
+        const subject = `Strategy Call: ${formData.specialty} - ${formData.businessName}`;
+        const body = `Name: ${formData.name}%0D%0ABusiness Name: %0D%0AEmail: ${formData.email}%0D%0APhone: ${formData.phone}%0D%0ABusiness Type: ${formData.specialty}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
         window.location.href = `mailto:hey@awabalishah.com?subject=${subject}&body=${body}`;
         onClose();
     };
@@ -56,7 +56,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                              </button>
 
                             <h2 className="text-3xl mb-2">Book a 15-Min Call</h2>
-                            <p className="text-body mb-6">Let's audit your current patient acquisition and show you how to capture the 20–40 appointments left on the table.</p>
+                            <p className="text-body mb-6">Let's look at your funnel, CRM and ads, and find where leads are slipping through.</p>
 
                             <form onSubmit={handleSubmit} className="space-y-4 max-h-[70vh] overflow-y-auto pr-1">
                                 <div>
@@ -73,15 +73,15 @@ const ContactModal = ({ isOpen, onClose }) => {
                                 </div>
 
                                 <div>
-                                    <label className="block text-xs font-semibold uppercase tracking-wider text-mute mb-1.5">Practice Name</label>
+                                    <label className="block text-xs font-semibold uppercase tracking-wider text-mute mb-1.5">Business Name</label>
                                     <input
                                         type="text"
-                                        name="clinicName"
+                                        name="businessName"
                                         required
-                                        value={formData.clinicName}
+                                        value={formData.businessName}
                                         onChange={handleChange}
                                         className="w-full px-4 py-2.5 bg-cream border border-line rounded-xl text-ink placeholder:text-mute focus:outline-none focus:border-sage-600 transition-colors text-sm"
-                                        placeholder="Riverside Family Health"
+                                        placeholder="Acme Marketing"
                                     />
                                 </div>
 
@@ -95,7 +95,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                                             value={formData.email}
                                             onChange={handleChange}
                                             className="w-full px-4 py-2.5 bg-cream border border-line rounded-xl text-ink placeholder:text-mute focus:outline-none focus:border-sage-600 transition-colors text-sm"
-                                            placeholder="john@clinic.com"
+                                            placeholder="john@company.com"
                                         />
                                     </div>
                                     <div>
@@ -113,7 +113,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                                 </div>
 
                                 <div>
-                                    <label className="block text-xs font-semibold uppercase tracking-wider text-mute mb-1.5">Practice Type</label>
+                                    <label className="block text-xs font-semibold uppercase tracking-wider text-mute mb-1.5">Business Type</label>
                                     <div className="relative">
                                         <select
                                             name="specialty"
@@ -122,11 +122,11 @@ const ContactModal = ({ isOpen, onClose }) => {
                                             className="w-full px-4 py-2.5 text-sm bg-cream border border-line rounded-xl text-ink placeholder:text-mute focus:outline-none focus:border-sage-600 transition-colors appearance-none cursor-pointer"
                                             
                                         >
-                                            <option value="Medical Practice" className="bg-paper text-ink py-2">Medical Practice</option>
-                                            <option value="Dental Practice" className="bg-paper text-ink py-2">Dental Practice</option>
-                                            <option value="Med Spa / Aesthetics" className="bg-paper text-ink py-2">Med Spa / Aesthetics</option>
-                                            <option value="Chiropractic / Physical Therapy" className="bg-paper text-ink py-2">Chiropractic / Physical Therapy</option>
-                                            <option value="Specialty Clinic" className="bg-paper text-ink py-2">Specialty Clinic</option>
+                                            <option value="Agency" className="bg-paper text-ink py-2">Agency</option>
+                                            <option value="Coach / Consultant" className="bg-paper text-ink py-2">Coach / Consultant</option>
+                                            <option value="Local Service Business" className="bg-paper text-ink py-2">Local Service Business</option>
+                                            <option value="E-commerce" className="bg-paper text-ink py-2">E-commerce</option>
+                                            <option value="SaaS" className="bg-paper text-ink py-2">SaaS</option>
                                             <option value="Other" className="bg-paper text-ink py-2">Other</option>
                                         </select>
                                         <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-mute">
@@ -146,7 +146,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                                         value={formData.message}
                                         onChange={handleChange}
                                         className="w-full px-4 py-2.5 bg-cream border border-line rounded-xl text-ink placeholder:text-mute focus:outline-none focus:border-sage-600 transition-colors resize-none text-sm"
-                                        placeholder="e.g., We have open calendar slots and want to fill them with new patients through targeted ads..."
+                                        placeholder="e.g., Leads come in from our ads but nobody follows up fast enough, and we want it automated in GHL..."
                                     ></textarea>
                                 </div>
 

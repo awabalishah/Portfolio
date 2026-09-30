@@ -6,7 +6,7 @@
 //   quote      What the client said, shown in italics
 //   metrics    Up to 3 numbers, each { value, label } (optional)
 //   client     Who said it. Keep it anonymous if the client hasn't agreed to be named
-//   practice   Second line under the client
+//   role       Second line under the client ("Agency owner")
 //   media      Optional: { type: 'video', src: '/testimonials/xyz.mp4' }
 //              or { type: 'image', src: '/testimonials/xyz.jpg', alt: '...' }
 //   draft      true hides the slide on the live site (it still shows on previews).
@@ -14,8 +14,8 @@
 export const testimonials = [
     {
         headline: 'Leads booked within two minutes, not the next morning',
-        client: 'Clinic partner',
-        practice: 'Verified medical practice founder',
+        client: 'Client',
+        role: 'Verified business owner',
         quote: 'The speed-to-lead system Awab implemented caught leads that used to sit in our inbox overnight. Booking them within two minutes completely solved our scheduling leakage.',
         metrics: [
             { value: '40+', label: 'Appointments recovered' },

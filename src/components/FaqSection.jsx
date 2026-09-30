@@ -3,24 +3,28 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const faqs = [
     {
-        question: "Is this patient acquisition workflow HIPAA-compliant?",
-        answer: "Yes, fully. We protect patient privacy by deploying encrypted landing page forms and connecting HIPAA-compliant software (such as CallRail for secure call attribution and HIPAA-enabled GoHighLevel configurations). We handle BAAs where necessary and ensure no sensitive clinical health records (PHI) are transmitted through unsecured channels."
+        question: "Do I need a GoHighLevel account already?",
+        answer: "No. I can set up a new GHL account for you or work inside the one you already have. If you are moving over from another tool like ClickFunnels, HubSpot or Calendly, I can migrate your contacts, pipelines and calendars."
     },
     {
-        question: "How quickly do we start seeing new patient bookings?",
-        answer: "Typically within 14 to 21 days. The first 10-14 days are spent auditing your geographic search volume, building secure landing pages, writing ads, and setting up integrations. Once campaigns launch, qualified patient inquiries generally begin coming in within the first 48 hours."
+        question: "What can you automate in GoHighLevel?",
+        answer: "Lead follow-up by SMS and email, missed-call text back, appointment booking and reminders, pipeline updates, review requests, reactivation campaigns for old leads, and alerts for your team. If you are doing it by hand every week, it can probably be automated."
     },
     {
-        question: "Does this integrate with our existing EHR or scheduling software?",
-        answer: "Yes. We connect leads and forms with popular patient appointment portals (Zocdoc, PatientPop, etc.) or clinic CRMs. We can configure automated webhooks to sync contacts directly or set up secure instant SMS alerts for your front desk receptionist."
+        question: "Do you build the funnels too?",
+        answer: "Yes. I design and build landing pages, opt-in funnels, booking funnels and surveys inside GHL, connected to your calendar and CRM so every lead is tracked from the first click."
     },
     {
-        question: "How do we filter out unqualified leads or bad insurance?",
-        answer: "We build custom candidate pre-screening questionnaires inside the landing page flow. Before requesting an appointment, prospects must verify their treatment need (the condition or service they need) and submit their insurance provider. This filters out low-intent inquiries automatically."
+        question: "Do you also run the ads?",
+        answer: "Yes. I run Meta and Google ads that send traffic into your funnel, and track results all the way to booked calls and sales, so you can see what each lead and appointment actually costs."
     },
     {
-        question: "What is your speed-to-lead automation?",
-        answer: "Most patient leads are lost because of delayed follow-ups. We configure automated text auto-responders that text the patient within 2 minutes of submission to secure the booking, while simultaneously triggering an automated phone callback to sync with your front desk."
+        question: "How long does a build take?",
+        answer: "Most funnel and automation builds take 1 to 3 weeks, depending on scope. Ads can launch as soon as the funnel is live, and leads usually start coming in within the first few days."
+    },
+    {
+        question: "What types of businesses do you work with?",
+        answer: "Any business that sells through calls or appointments: agencies, coaches and consultants, local service businesses, and more. If leads come in and someone has to follow up with them, this system works for you."
     }
 ];
 

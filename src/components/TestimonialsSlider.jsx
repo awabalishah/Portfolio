@@ -106,7 +106,7 @@ const Slide = ({ result }) => {
                     </div>
                     <div>
                         <div className="text-sm font-semibold text-ink">{result.client}</div>
-                        <div className="text-xs text-mute">{result.practice}</div>
+                        <div className="text-xs text-mute">{result.role}</div>
                     </div>
                 </div>
             </div>

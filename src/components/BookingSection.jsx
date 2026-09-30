@@ -12,8 +12,8 @@ const themedUrl = (url) => {
 
 const steps = [
     { title: 'Pick a time', text: 'Choose a 15-minute slot that works for you.' },
-    { title: 'We audit your market', text: 'Before the call, I look at search demand and competitors near your practice.' },
-    { title: 'Get your plan', text: 'You leave with a clear picture of how many appointments you are missing and how to get them.' },
+    { title: 'I review your setup', text: 'Before the call, I look at your current funnel, CRM and ads.' },
+    { title: 'Get your plan', text: 'You leave with a clear list of what to build, fix or automate first.' },
 ];
 
 const BookingSection = () => {
@@ -34,7 +34,7 @@ const BookingSection = () => {
                         Book your free <span className="accent">strategy call.</span>
                     </h2>
                     <p className="text-base md:text-lg mt-4 max-w-xl mx-auto">
-                        I only take on a few practices at a time, one per local market, so your competitors are not using the same system.
+                        I work with a small number of clients at a time, so every build gets my full attention.
                     </p>
                 </motion.div>
 
@@ -59,7 +59,7 @@ const BookingSection = () => {
                     ) : (
                         <div className="flex flex-col items-center text-center gap-4 px-6 py-16">
                             <p className="text-base max-w-md">
-                                Tell me a bit about your practice and I will send you a time for your call.
+                                Tell me a bit about your business and I will send you a time for your call.
                             </p>
                             <button
                                 onClick={() => setIsContactOpen(true)}
