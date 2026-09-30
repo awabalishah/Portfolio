@@ -8,7 +8,7 @@ function App() {
   const location = useLocation();
 
   return (
-    <div className="bg-[#050505] min-h-screen text-[#f3f3f3] selection:bg-white selection:text-black">
+    <div className="min-h-screen selection:bg-sage-200 selection:text-ink">
       <Navbar />
       <PageTransition>
         <Routes location={location} key={location.pathname}>

@@ -28,13 +28,13 @@ const FaqItem = ({ faq, index }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="border-b border-white/[0.06] last:border-b-0 py-5">
+        <div className="border-b border-line last:border-b-0 py-5">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="w-full flex justify-between items-center text-left text-base md:text-lg font-semibold text-gray-200 hover:text-white transition-colors duration-200 cursor-pointer"
+                className="w-full flex justify-between items-center text-left gap-6 font-display text-base md:text-lg font-semibold text-ink hover:text-sage-700 transition-colors duration-200 cursor-pointer"
             >
                 <span>{faq.question}</span>
-                <span className={`text-teal-400 font-light text-2xl transform transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`}>
+                <span className={`shrink-0 text-sage-600 font-light text-2xl leading-none transform transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`}>
                     +
                 </span>
             </button>
@@ -47,7 +47,7 @@ const FaqItem = ({ faq, index }) => {
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                         className="overflow-hidden"
                     >
-                        <p className="text-sm md:text-base text-gray-400 mt-3 leading-relaxed max-w-3xl pb-2">
+                        <p className="text-sm md:text-base mt-3 leading-relaxed max-w-3xl pb-2">
                             {faq.answer}
                         </p>
                     </motion.div>
@@ -59,20 +59,18 @@ const FaqItem = ({ faq, index }) => {
 
 const FaqSection = () => {
     return (
-        <section id="faq" className="py-16 md:py-20 px-4">
+        <section id="faq" className="py-20 md:py-28 px-4 bg-sand">
             <div className="container max-w-4xl mx-auto px-4 md:px-8">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <span className="inline-block px-3 py-1 text-xs font-medium tracking-widest uppercase text-teal-400 bg-teal-500/10 border border-teal-500/20 rounded-full mb-4">
-                        Common Questions
-                    </span>
-                    <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-white">
-                        HIPAA, EHRs, and Campaign Setup
+                    <span className="eyebrow mb-4">Common Questions</span>
+                    <h2 className="text-3xl md:text-5xl">
+                        Questions, <span className="accent">answered.</span>
                     </h2>
                 </div>
 
                 {/* FAQ List */}
-                <div className="bg-gradient-to-br from-zinc-900/40 to-zinc-800/20 p-6 md:p-10 rounded-3xl border border-white/[0.05]">
+                <div className="card px-6 md:px-10 py-2 md:py-4">
                     {faqs.map((faq, index) => (
                         <FaqItem key={index} faq={faq} index={index} />
                     ))}

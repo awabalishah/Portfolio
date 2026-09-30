@@ -21,8 +21,8 @@ const toEmbedUrl = (src) => {
 };
 
 const Frame = ({ children }) => (
-    <div className="w-full bg-gradient-to-b from-[#141414] to-[#0a0a0a] rounded-3xl p-2 md:p-3 border border-white/[0.08] shadow-[0_0_80px_rgba(20,184,166,0.12)]">
-        <div className="relative w-full rounded-2xl overflow-hidden aspect-video bg-black">
+    <div className="w-full bg-paper rounded-[28px] p-2 md:p-2.5 border border-line shadow-lift">
+        <div className="relative w-full rounded-[22px] overflow-hidden aspect-video bg-ink">
             {children}
         </div>
     </div>
@@ -30,13 +30,13 @@ const Frame = ({ children }) => (
 
 const Placeholder = () => (
     <Frame>
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-[radial-gradient(ellipse_at_center,rgba(20,184,166,0.15),transparent_70%)]">
-            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-teal-500 flex items-center justify-center text-white shadow-xl shadow-teal-500/30">
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-sage-100 via-sand to-blush">
+            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-sage-700 flex items-center justify-center text-white shadow-xl shadow-sage-800/30">
                 <svg className="w-8 h-8 md:w-10 md:h-10 fill-current translate-x-0.5" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z" />
                 </svg>
             </div>
-            <p className="text-sm text-gray-400">Video coming soon</p>
+            <p className="text-sm font-medium text-body">Video coming soon</p>
         </div>
     </Frame>
 );
@@ -120,13 +120,13 @@ const FilePlayer = ({ src, poster, onWatchTime }) => {
                     <motion.div
                         animate={{ scale: [1, 1.08, 1] }}
                         transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
-                        className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-teal-500 flex items-center justify-center text-white shadow-xl shadow-teal-500/40"
+                        className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-sage-700 flex items-center justify-center text-white shadow-xl shadow-sage-800/30"
                     >
                         <svg className="w-8 h-8 md:w-10 md:h-10 fill-current translate-x-0.5" viewBox="0 0 24 24">
                             <path d="M8 5v14l11-7z" />
                         </svg>
                     </motion.div>
-                    <span className="px-4 py-2 rounded-full bg-black/80 border border-teal-500/30 text-teal-300 text-xs md:text-sm font-semibold">
+                    <span className="px-4 py-2 rounded-full bg-paper/95 text-ink shadow-soft text-xs md:text-sm font-semibold">
                         Your video is playing. Tap to hear it
                     </span>
                 </button>
@@ -138,7 +138,7 @@ const FilePlayer = ({ src, poster, onWatchTime }) => {
                     className="absolute inset-0 flex items-center justify-center bg-black/40 cursor-pointer"
                     aria-label="Play"
                 >
-                    <div className="w-16 h-16 rounded-full bg-teal-500 flex items-center justify-center text-white shadow-xl shadow-teal-500/30">
+                    <div className="w-16 h-16 rounded-full bg-sage-700 flex items-center justify-center text-white shadow-xl shadow-sage-800/30">
                         <svg className="w-8 h-8 fill-current translate-x-0.5" viewBox="0 0 24 24">
                             <path d="M8 5v14l11-7z" />
                         </svg>
@@ -149,7 +149,7 @@ const FilePlayer = ({ src, poster, onWatchTime }) => {
             {/* Progress only, no scrubbing, so viewers watch the pitch in order */}
             {started && (
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/10 pointer-events-none">
-                    <div className="h-full bg-teal-400 transition-[width] duration-300" style={{ width: `${progress}%` }} />
+                    <div className="h-full bg-sage-400 transition-[width] duration-300" style={{ width: `${progress}%` }} />
                 </div>
             )}
         </Frame>
