@@ -15,6 +15,7 @@ const Footer = () => {
                         AWAB <span className="text-sage-600">ALI</span>
                     </div>
                     <p className="text-sm text-mute mt-1">Media buyer · Meta &amp; Google Ads · GoHighLevel</p>
+                    <p className="text-xs text-mute mt-1">Based in UAE · Available on EST hours</p>
                 </div>
 
                 <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">

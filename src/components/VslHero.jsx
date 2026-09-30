@@ -23,9 +23,9 @@ const VslHero = () => {
             >
                 <motion.div variants={itemVariants} className="flex items-center gap-3 mb-8">
                     <img
-                        src="/Profile-picture-website.jpg"
+                        src="/awab-ali-shah.jpg"
                         alt="Awab Ali Shah"
-                        className="w-12 h-12 rounded-full object-cover object-top border-2 border-paper shadow-soft"
+                        className="w-16 h-16 rounded-full object-cover border-[3px] border-paper shadow-soft"
                     />
                     <div className="text-left">
                         <div className="font-display text-sm font-semibold text-ink">Awab Ali Shah</div>
@@ -36,6 +36,7 @@ const VslHero = () => {
                             </span>
                             Open to full-time &amp; contract roles
                         </div>
+                        <div className="text-xs text-mute mt-0.5">Based in UAE · Available on EST hours</div>
                     </div>
                 </motion.div>
 

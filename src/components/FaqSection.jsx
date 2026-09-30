@@ -4,7 +4,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 const faqs = [
     {
         question: "What kind of role are you looking for?",
-        answer: "A media buying role where I manage Meta and Google ad accounts, at an agency or in-house. I'm open to full-time, part-time and contract positions, working remotely."
+        answer: "A media buying role where I manage Meta and Google ad accounts, at an agency or in-house. I'm open to full-time, part-time and contract positions, working remotely from the UAE."
+    },
+    {
+        question: "Where are you based, and what hours do you work?",
+        answer: "I'm based in the UAE and work on US Eastern Time (EST), so I'm online during your business hours for calls, launches and campaign changes."
     },
     {
         question: "Which ad platforms do you run?",
