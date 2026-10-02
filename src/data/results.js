@@ -5,13 +5,10 @@
 //   caption    Small line under that ("One client ad account. May 2026.")
 //   alt        Short description of the image for screen readers
 
+// May 2026 (155 appointments) is left out until the screenshot is re-exported:
+// its rows match the Nov to Dec 2025 report exactly. The file is still in
+// /public/results/may-2026-155-appointments.webp.
 export const results = [
-    {
-        image: '/results/may-2026-155-appointments.webp',
-        headline: '155 booked appointments',
-        caption: 'One client ad account. May 2026. $23,789 in ad spend.',
-        alt: 'Meta Ads Manager report for May 2026 showing 155 website schedules',
-    },
     {
         image: '/results/14-bookings-in-a-day.jpg',
         headline: '14 bookings in a day',

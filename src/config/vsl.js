@@ -19,3 +19,18 @@ export const BOOKING_URL = '';
 // (e.g. '/Awab-Ali-Shah-Resume.pdf') or paste a Google Drive link.
 // Leave empty to hide the button.
 export const RESUME_URL = '';
+
+// Contact details shown in the contact section and footer.
+export const CONTACT = {
+    email: 'hey@awabalishah.com',
+    whatsapp: '+1 402 872 0319',
+    linkedin: 'https://www.linkedin.com/in/awab-ali/',
+};
+
+// Headline numbers shown in the stat cards under the hero.
+export const STATS = [
+    { value: '$5M+', label: 'Ad spend managed', description: 'Across Meta & Google Ads' },
+    { value: '50+', label: 'Ad accounts managed', description: 'From launch to scale' },
+    { value: '3.8x', label: 'Average return on ad spend', description: 'Across Meta & Google campaigns' },
+    { value: '< 2 min', label: 'Lead follow-up time', description: 'Automated in GoHighLevel' },
+];

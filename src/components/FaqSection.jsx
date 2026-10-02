@@ -67,7 +67,7 @@ const FaqItem = ({ faq, index }) => {
 
 const FaqSection = () => {
     return (
-        <section id="faq" className="py-20 md:py-28 px-4">
+        <section id="faq" className="py-20 md:py-28 px-4 bg-sand scroll-mt-20">
             <div className="container max-w-4xl mx-auto px-4 md:px-8">
                 {/* Header */}
                 <div className="text-center mb-12">

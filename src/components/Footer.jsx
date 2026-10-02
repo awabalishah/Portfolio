@@ -2,7 +2,7 @@ const links = [
     { href: 'https://www.upwork.com/freelancers/awabalishah', label: 'Upwork' },
     { href: 'https://www.linkedin.com/in/awab-ali/', label: 'LinkedIn' },
     { href: 'https://x.com/Awabalishah', label: 'X (Twitter)' },
-    { href: 'http://github.com/awabalishah/', label: 'GitHub' },
+    { href: 'https://wa.me/14028720319', label: 'WhatsApp' },
     { href: 'mailto:hey@awabalishah.com', label: 'Email' },
 ];
 
