@@ -1,10 +1,10 @@
-// Everything you need to change for the VSL homepage lives here.
+// Everything you need to change on the homepage lives here.
 
-// The VSL video. Leave empty to show the "coming soon" placeholder.
+// Your intro video (shown in the hero). Leave empty to show the "coming soon" placeholder.
 // Accepts either:
 //   - a file in /public, e.g. '/vsl.mp4'
 //   - a YouTube / Vimeo / Wistia / Loom link, e.g. 'https://youtu.be/abc123'
-export const VSL_VIDEO_SRC = 'https://www.loom.com/share/aecc51cb9fc4409484e59c7b30fe0ab8';
+export const VSL_VIDEO_SRC = '';
 
 // Optional thumbnail shown before an MP4 starts playing, e.g. '/vsl-poster.jpg'.
 export const VSL_POSTER = '';
@@ -15,7 +15,7 @@ export const VSL_POSTER = '';
 // Leave empty to fall back to the contact form popup.
 export const BOOKING_URL = '';
 
-// Seconds of the video a visitor must watch before the booking button shows
-// under the video. Set to 0 to always show it. Only applies to MP4 videos;
-// embedded players (YouTube etc.) always show the button.
-export const CTA_REVEAL_SECONDS = 0;
+// Your resume, shown as a "Download resume" button. Put a PDF in /public
+// (e.g. '/Awab-Ali-Shah-Resume.pdf') or paste a Google Drive link.
+// Leave empty to hide the button.
+export const RESUME_URL = '';

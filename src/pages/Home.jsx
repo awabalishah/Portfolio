@@ -1,7 +1,7 @@
 import VslHero from '../components/VslHero';
 import Results from '../components/Results';
 import ResultsGallery from '../components/ResultsGallery';
-import TestimonialsSlider from '../components/TestimonialsSlider';
+import Expertise from '../components/Expertise';
 import BookingSection from '../components/BookingSection';
 import FaqSection from '../components/FaqSection';
 import Footer from '../components/Footer';
@@ -12,7 +12,7 @@ const Home = () => {
             <VslHero />
             <Results />
             <ResultsGallery />
-            <TestimonialsSlider />
+            <Expertise />
             <BookingSection />
             <FaqSection />
             <Footer />

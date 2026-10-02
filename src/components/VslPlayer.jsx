@@ -45,7 +45,7 @@ const EmbedPlayer = ({ src }) => (
     <Frame>
         <iframe
             src={src}
-            title="Video: how I fill clinic calendars"
+            title="Video: intro from Awab Ali Shah"
             className="absolute inset-0 w-full h-full"
             allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
             allowFullScreen

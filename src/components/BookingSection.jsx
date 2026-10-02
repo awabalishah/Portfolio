@@ -11,9 +11,9 @@ const themedUrl = (url) => {
 };
 
 const steps = [
-    { title: 'Pick a time', text: 'Choose a 15-minute slot that works for you.' },
-    { title: 'We audit your market', text: 'Before the call, I look at search demand and competitors near your practice.' },
-    { title: 'Get your plan', text: 'You leave with a clear picture of how many appointments you are missing and how to get them.' },
+    { title: 'Pick a time', text: 'Choose a 15-minute slot for a quick intro call.' },
+    { title: 'Tell me about the role', text: 'The accounts, channels, budgets and goals I would be working on.' },
+    { title: 'See if it is a fit', text: 'I walk you through how I would approach your accounts in the first 30 days.' },
 ];
 
 const BookingSection = () => {
@@ -31,10 +31,10 @@ const BookingSection = () => {
                 >
                     <span className="eyebrow mb-4">Next Step</span>
                     <h2 className="text-3xl md:text-5xl">
-                        Book your free <span className="accent">strategy call.</span>
+                        Let's talk about <span className="accent">the role.</span>
                     </h2>
                     <p className="text-base md:text-lg mt-4 max-w-xl mx-auto">
-                        I only take on a few practices at a time, one per local market, so your competitors are not using the same system.
+                        Hiring a media buyer? Book a quick intro call, or email me at hey@awabalishah.com.
                     </p>
                 </motion.div>
 
@@ -52,20 +52,20 @@ const BookingSection = () => {
                     {BOOKING_URL ? (
                         <iframe
                             src={themedUrl(BOOKING_URL)}
-                            title="Book a strategy call"
+                            title="Book an intro call"
                             className="w-full h-[720px] md:h-[760px] border-0"
                             loading="lazy"
                         />
                     ) : (
                         <div className="flex flex-col items-center text-center gap-4 px-6 py-16">
                             <p className="text-base max-w-md">
-                                Tell me a bit about your practice and I will send you a time for your call.
+                                Tell me a bit about the role and I will get back to you with a time to talk.
                             </p>
                             <button
                                 onClick={() => setIsContactOpen(true)}
                                 className="btn-primary"
                             >
-                                Request My Call
+                                Get in Touch
                             </button>
                         </div>
                     )}

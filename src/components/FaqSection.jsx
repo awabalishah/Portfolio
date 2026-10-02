@@ -3,24 +3,32 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const faqs = [
     {
-        question: "Is this patient acquisition workflow HIPAA-compliant?",
-        answer: "Yes, fully. We protect patient privacy by deploying encrypted landing page forms and connecting HIPAA-compliant software (such as CallRail for secure call attribution and HIPAA-enabled GoHighLevel configurations). We handle BAAs where necessary and ensure no sensitive clinical health records (PHI) are transmitted through unsecured channels."
+        question: "What kind of role are you looking for?",
+        answer: "A media buying role where I manage Meta and Google ad accounts, at an agency or in-house. I'm open to full-time, part-time and contract positions, working remotely from the UAE."
     },
     {
-        question: "How quickly do we start seeing new patient bookings?",
-        answer: "Typically within 14 to 21 days. The first 10-14 days are spent auditing your geographic search volume, building secure landing pages, writing ads, and setting up integrations. Once campaigns launch, qualified patient inquiries generally begin coming in within the first 48 hours."
+        question: "Where are you based, and what hours do you work?",
+        answer: "I'm based in the UAE and work on US Eastern Time (EST), so I'm online during your business hours for calls, launches and campaign changes."
     },
     {
-        question: "Does this integrate with our existing EHR or scheduling software?",
-        answer: "Yes. We connect leads and forms with popular patient appointment portals (Zocdoc, PatientPop, etc.) or clinic CRMs. We can configure automated webhooks to sync contacts directly or set up secure instant SMS alerts for your front desk receptionist."
+        question: "Which ad platforms do you run?",
+        answer: "Meta (Facebook and Instagram) and Google Ads. That covers campaign setup, audiences, budgets, creative testing, conversion tracking with the Pixel and Conversions API, and reporting in GA4."
     },
     {
-        question: "How do we filter out unqualified leads or bad insurance?",
-        answer: "We build custom candidate pre-screening questionnaires inside the landing page flow. Before requesting an appointment, prospects must verify their treatment need (the condition or service they need) and submit their insurance provider. This filters out low-intent inquiries automatically."
+        question: "Can you work inside our existing ad accounts and GoHighLevel?",
+        answer: "Yes. I can work in your agency's or your clients' ad accounts and GHL sub-accounts with whatever access you give me, and follow your naming conventions, processes and reporting setup."
     },
     {
-        question: "What is your speed-to-lead automation?",
-        answer: "Most patient leads are lost because of delayed follow-ups. We configure automated text auto-responders that text the patient within 2 minutes of submission to secure the booking, while simultaneously triggering an automated phone callback to sync with your front desk."
+        question: "Do you handle ad creative?",
+        answer: "I write ad copy and creative briefs and plan the creative tests: which hooks, angles and formats to try and when to cut or scale them. I work closely with designers and video editors to get the assets made."
+    },
+    {
+        question: "What do you report on?",
+        answer: "Spend, cost per lead, cost per booked call and return on ad spend, plus what changed that week and what I'm testing next. The goal is numbers the team can actually act on."
+    },
+    {
+        question: "Why does GoHighLevel experience matter for a media buyer?",
+        answer: "Because ads only pay off if the leads get followed up. I can tell when the real problem is the funnel or the follow-up rather than the ads, and fix it myself instead of just raising the budget."
     }
 ];
 
