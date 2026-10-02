@@ -40,8 +40,11 @@ const VslHero = () => {
                     </div>
                 </motion.div>
 
-                <motion.span variants={itemVariants} className="eyebrow mb-6">
-                    Media Buyer · Meta &amp; Google Ads
+                {/* Wraps to two lines on phones, one line from sm up */}
+                <motion.span variants={itemVariants} className="eyebrow mb-6 flex-wrap justify-center text-center !rounded-2xl sm:!rounded-full py-1.5 sm:py-1 gap-x-2 gap-y-0.5">
+                    <span>Media Buyer · Meta &amp; Google Ads</span>
+                    <span className="hidden sm:inline" aria-hidden="true">·</span>
+                    <span>GHL Automations</span>
                 </motion.span>
 
                 <motion.h1
