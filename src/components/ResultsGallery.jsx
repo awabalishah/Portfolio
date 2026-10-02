@@ -45,7 +45,7 @@ const ResultsGallery = () => {
     if (results.length === 0) return null;
 
     return (
-        <section id="results" className="py-20 md:py-28 bg-sand scroll-mt-20 overflow-hidden">
+        <section id="results" className="py-20 md:py-28 scroll-mt-20 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-12">
                     <div className="max-w-xl">

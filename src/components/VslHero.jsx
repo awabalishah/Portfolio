@@ -36,7 +36,7 @@ const VslHero = () => {
                             </span>
                             Open to full-time &amp; contract roles
                         </div>
-                        <div className="text-xs text-mute mt-0.5">Based in UAE · Available on EST hours</div>
+                        <div className="text-xs text-mute mt-0.5">Remote · Available US &amp; UK hours</div>
                     </div>
                 </motion.div>
 
@@ -59,7 +59,7 @@ const VslHero = () => {
                     variants={itemVariants}
                     className="text-base md:text-lg leading-relaxed max-w-2xl"
                 >
-                    I have managed $5M+ in ad spend across 50+ accounts. I plan, launch and scale Meta and Google campaigns, then build the GoHighLevel funnels and follow-up automations that turn those clicks into booked calls.
+                    5+ years running Meta, Google and TikTok Ads for agencies and local businesses, with 10+ accounts and $50K+ in monthly spend at a time. I launch and scale the campaigns, then build the GoHighLevel funnels and follow-up automations that turn those clicks into booked calls.
                 </motion.p>
 
                 {/* Only shown once an intro video is set in src/config/vsl.js */}

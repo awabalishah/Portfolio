@@ -3,9 +3,9 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { RESUME_URL } from '../config/vsl';
 
 const links = [
+    { href: '/#experience', label: 'Experience' },
     { href: '/#results', label: 'Results' },
     { href: '/#skills', label: 'Skills' },
-    { href: '/#faq', label: 'FAQ' },
     { href: '/#contact', label: 'Contact' },
 ];
 

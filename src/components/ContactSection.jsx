@@ -68,7 +68,7 @@ const ContactSection = () => {
     const [isContactOpen, setIsContactOpen] = useState(false);
 
     return (
-        <section id="contact" className="py-20 md:py-28 px-4 scroll-mt-20">
+        <section id="contact" className="py-20 md:py-28 px-4 bg-sand scroll-mt-20">
             <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-10 md:mb-12">
                     <span className="eyebrow mb-4">Contact</span>
@@ -76,7 +76,7 @@ const ContactSection = () => {
                         Let's talk about <span className="accent">the role.</span>
                     </h2>
                     <p className="text-base md:text-lg mt-4 max-w-xl mx-auto">
-                        Hiring a media buyer? Reach me directly on any of these. Based in the UAE, available on EST hours.
+                        Hiring a media buyer? Reach me directly on any of these. I work remotely and am available during US and UK hours.
                     </p>
                 </div>
 

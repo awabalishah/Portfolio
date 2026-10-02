@@ -4,15 +4,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 const faqs = [
     {
         question: "What kind of role are you looking for?",
-        answer: "A media buying role where I manage Meta and Google ad accounts, at an agency or in-house. I'm open to full-time, part-time and contract positions, working remotely from the UAE."
+        answer: "A media buying role where I manage Meta and Google ad accounts, at an agency or in-house. I'm open to full-time, part-time and contract positions, working remotely."
     },
     {
-        question: "Where are you based, and what hours do you work?",
-        answer: "I'm based in the UAE and work on US Eastern Time (EST), so I'm online during your business hours for calls, launches and campaign changes."
+        question: "Do you work remotely, and what hours?",
+        answer: "I work fully remotely and am available during US and UK business hours, so I'm online for your calls, launches and campaign changes."
     },
     {
         question: "Which ad platforms do you run?",
-        answer: "Meta (Facebook and Instagram) and Google Ads. That covers campaign setup, audiences, budgets, creative testing, conversion tracking with the Pixel and Conversions API, and reporting in GA4."
+        answer: "Mainly Meta (Facebook and Instagram) and Google Ads, plus TikTok Ads. That covers campaign structure, audiences, budgets, creative testing, and tracking with the Meta Pixel, Conversions API and Google Tag Manager."
     },
     {
         question: "Can you work inside our existing ad accounts and GoHighLevel?",
@@ -20,7 +20,7 @@ const faqs = [
     },
     {
         question: "Do you handle ad creative?",
-        answer: "I write ad copy and creative briefs and plan the creative tests: which hooks, angles and formats to try and when to cut or scale them. I work closely with designers and video editors to get the assets made."
+        answer: "I write ad copy, creative briefs and competitor research from the Meta Ad Library, and plan the creative tests. I also use AI tools like Higgsfield for creative production to speed up asset turnaround."
     },
     {
         question: "What do you report on?",
@@ -67,7 +67,7 @@ const FaqItem = ({ faq, index }) => {
 
 const FaqSection = () => {
     return (
-        <section id="faq" className="py-20 md:py-28 px-4 bg-sand scroll-mt-20">
+        <section id="faq" className="py-20 md:py-28 px-4 scroll-mt-20">
             <div className="container max-w-4xl mx-auto px-4 md:px-8">
                 {/* Header */}
                 <div className="text-center mb-12">

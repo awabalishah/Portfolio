@@ -8,14 +8,14 @@ const links = [
 
 const Footer = () => {
     return (
-        <footer className="border-t border-line bg-sand py-14 px-4">
+        <footer className="border-t border-line py-14 px-4">
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
                 <div>
                     <div className="font-display text-lg font-bold tracking-tight text-ink">
                         AWAB <span className="text-sage-600">ALI</span>
                     </div>
                     <p className="text-sm text-mute mt-1">Media buyer · Meta &amp; Google Ads · GoHighLevel</p>
-                    <p className="text-xs text-mute mt-1">Based in UAE · Available on EST hours</p>
+                    <p className="text-xs text-mute mt-1">Remote · Available US &amp; UK hours</p>
                 </div>
 
                 <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
