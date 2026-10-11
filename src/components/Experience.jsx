@@ -7,23 +7,22 @@ const Experience = () => {
     return (
         <section id="experience" className="py-20 md:py-28 px-4 bg-sand scroll-mt-20">
             <div className="max-w-4xl mx-auto">
-                <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-14">
-                    <div className="max-w-xl">
-                        <span className="eyebrow mb-4">Experience</span>
-                        <h2 className="text-3xl md:text-5xl">
-                            Where I've <span className="accent">done the work.</span>
-                        </h2>
-                    </div>
-                    <div className="flex flex-wrap gap-3 self-start md:self-auto">
-                    <BookInterviewButton />
-                    {RESUME_URL && (
-                        <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className="btn-ghost">
-                            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M12 3v12M7 10l5 5 5-5M5 21h14" />
-                            </svg>
-                            Download Resume (PDF)
-                        </a>
-                    )}
+                {/* Heading with the two actions on one row underneath */}
+                <div className="mb-10 md:mb-14">
+                    <span className="eyebrow mb-4">Experience</span>
+                    <h2 className="text-3xl md:text-5xl">
+                        Where I've <span className="accent">done the work.</span>
+                    </h2>
+                    <div className="flex flex-wrap items-center gap-3 mt-7">
+                        <BookInterviewButton />
+                        {RESUME_URL && (
+                            <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className="btn-ghost">
+                                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M12 3v12M7 10l5 5 5-5M5 21h14" />
+                                </svg>
+                                Download Resume (PDF)
+                            </a>
+                        )}
                     </div>
                 </div>
 

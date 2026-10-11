@@ -6,7 +6,7 @@ const links = [
     { href: 'https://www.linkedin.com/in/awab-ali/', label: 'LinkedIn' },
     { href: 'https://x.com/Awabalishah', label: 'X (Twitter)' },
     { href: 'https://wa.me/14028720319', label: 'WhatsApp' },
-    { href: 'mailto:hey@awabalishah.com', label: 'Email' },
+    { href: 'mailto:awab@loopwiremedia.com', label: 'Email' },
 ];
 
 const Footer = () => {

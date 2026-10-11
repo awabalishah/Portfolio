@@ -22,7 +22,7 @@ export const RESUME_URL = '/Awab-Ali-Shah-Resume.pdf';
 
 // Contact details shown in the contact section and footer.
 export const CONTACT = {
-    email: 'hey@awabalishah.com',
+    email: 'awab@loopwiremedia.com',
     whatsapp: '+1 402 872 0319',
     linkedin: 'https://www.linkedin.com/in/awab-ali/',
 };
