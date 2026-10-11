@@ -55,7 +55,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                                 </svg>
                              </button>
 
-                            <h2 className="text-3xl mb-2">Let's Talk</h2>
+                            <h2 className="text-3xl mb-2">Send a Message</h2>
                             <p className="text-body mb-6">Tell me about the role and I will get back to you.</p>
 
                             <form onSubmit={handleSubmit} className="space-y-4 max-h-[70vh] overflow-y-auto pr-1">

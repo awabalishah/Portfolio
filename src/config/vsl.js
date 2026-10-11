@@ -13,7 +13,7 @@ export const VSL_POSTER = '';
 //   'https://calendly.com/your-name/15min'
 //   'https://api.leadconnectorhq.com/widget/booking/XXXXXXXX'
 // Leave empty to fall back to the contact form popup.
-export const BOOKING_URL = '';
+export const BOOKING_URL = 'https://calendly.com/awabalishah/30min';
 
 // Your resume, shown as a "Download resume" button. Put a PDF in /public
 // (e.g. '/Awab-Ali-Shah-Resume.pdf') or paste a Google Drive link.

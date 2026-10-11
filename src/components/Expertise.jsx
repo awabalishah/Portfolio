@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import BookInterviewButton from './BookInterviewButton';
 
 const mediaBuying = [
     'Campaign structure, audiences and budgets on Meta and Google',
@@ -90,6 +91,10 @@ const Expertise = () => {
                             </motion.div>
                         ))}
                     </div>
+                </div>
+
+                <div className="text-center mt-12 md:mt-14">
+                    <BookInterviewButton />
                 </div>
             </div>
         </section>

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { experience } from '../data/experience';
 import { RESUME_URL } from '../config/vsl';
+import BookInterviewButton from './BookInterviewButton';
 
 const Experience = () => {
     return (
@@ -13,14 +14,17 @@ const Experience = () => {
                             Where I've <span className="accent">done the work.</span>
                         </h2>
                     </div>
+                    <div className="flex flex-wrap gap-3 self-start md:self-auto">
+                    <BookInterviewButton />
                     {RESUME_URL && (
-                        <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className="btn-ghost self-start md:self-auto">
+                        <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className="btn-ghost">
                             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M12 3v12M7 10l5 5 5-5M5 21h14" />
                             </svg>
                             Download Resume (PDF)
                         </a>
                     )}
+                    </div>
                 </div>
 
                 <ol className="relative border-l border-line ml-2 md:ml-3">

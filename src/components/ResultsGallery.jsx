@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import { results } from '../data/results';
+import BookInterviewButton from './BookInterviewButton';
 
 const Arrow = ({ direction, onClick, disabled }) => (
     <button
@@ -98,6 +99,10 @@ const ResultsGallery = () => {
             <div className="flex md:hidden justify-center gap-2 mt-6 px-4">
                 <Arrow direction="prev" onClick={() => scroll(-1)} disabled={atStart} />
                 <Arrow direction="next" onClick={() => scroll(1)} disabled={atEnd} />
+            </div>
+
+            <div className="text-center mt-10 md:mt-12 px-4">
+                <BookInterviewButton>Book Interview to discuss these results</BookInterviewButton>
             </div>
         </section>
     );

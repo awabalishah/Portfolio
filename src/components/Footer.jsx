@@ -1,4 +1,7 @@
+import { BOOKING_URL } from '../config/vsl';
+
 const links = [
+    { href: BOOKING_URL, label: 'Book Interview' },
     { href: 'https://www.upwork.com/freelancers/awabalishah', label: 'Upwork' },
     { href: 'https://www.linkedin.com/in/awab-ali/', label: 'LinkedIn' },
     { href: 'https://x.com/Awabalishah', label: 'X (Twitter)' },

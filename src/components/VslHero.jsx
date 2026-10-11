@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import VslPlayer from './VslPlayer';
+import BookInterviewButton from './BookInterviewButton';
 import { VSL_VIDEO_SRC, VSL_POSTER, RESUME_URL, CONTACT } from '../config/vsl';
 
 const itemVariants = {
@@ -70,12 +71,7 @@ const VslHero = () => {
                 )}
 
                 <motion.div variants={itemVariants} className="flex flex-wrap justify-center gap-3 mt-10">
-                    <a href="#contact" className="btn-primary !px-8 !py-4 !text-base">
-                        Book an Interview
-                        <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M5 12h14M13 6l6 6-6 6" />
-                        </svg>
-                    </a>
+                    <BookInterviewButton className="btn-primary !px-8 !py-4 !text-base" />
                     {RESUME_URL ? (
                         <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className="btn-ghost !px-7 !py-4 !text-base">
                             Download Resume

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { RESUME_URL } from '../config/vsl';
+import BookInterviewButton from './BookInterviewButton';
 
 const links = [
     { href: '/#experience', label: 'Experience' },
@@ -45,23 +46,20 @@ const Navbar = () => {
                             </a>
                         ))}
                     </div>
-                    {RESUME_URL ? (
+                    {RESUME_URL && (
                         <a
                             href={RESUME_URL}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="ml-2 px-4 md:px-5 py-2 text-xs md:text-sm font-semibold text-cream bg-sage-700 hover:bg-sage-800 rounded-full transition-colors whitespace-nowrap"
+                            className="hidden sm:inline-block px-3 py-2 text-sm font-medium text-body hover:text-ink transition-colors"
                         >
                             Resume
                         </a>
-                    ) : (
-                        <a
-                            href="/#contact"
-                            className="ml-2 px-4 md:px-5 py-2 text-xs md:text-sm font-semibold text-cream bg-sage-700 hover:bg-sage-800 rounded-full transition-colors whitespace-nowrap"
-                        >
-                            Let's Talk
-                        </a>
                     )}
+                    <BookInterviewButton
+                        arrow={false}
+                        className="ml-1 sm:ml-2 px-4 md:px-5 py-2 text-xs md:text-sm font-semibold text-cream bg-sage-700 hover:bg-sage-800 rounded-full transition-colors whitespace-nowrap"
+                    />
                 </div>
             </div>
         </motion.nav>

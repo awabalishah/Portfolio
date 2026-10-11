@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import ContactModal from './ContactModal';
+import BookInterviewButton from './BookInterviewButton';
 import { BOOKING_URL, CONTACT, RESUME_URL } from '../config/vsl';
 
 // Calendly accepts theme params in the URL; other providers ignore them.
@@ -73,13 +74,33 @@ const ContactSection = () => {
                 <div className="text-center mb-10 md:mb-12">
                     <span className="eyebrow mb-4">Contact</span>
                     <h2 className="text-3xl md:text-5xl">
-                        Let's talk about <span className="accent">the role.</span>
+                        Book an <span className="accent">interview.</span>
                     </h2>
                     <p className="text-base md:text-lg mt-4 max-w-xl mx-auto">
-                        Hiring a media buyer? Reach me directly on any of these. I work remotely and am available during US and UK hours.
+                        Hiring a media buyer? Pick a 30-minute slot below. I work remotely and am available during US and UK hours.
                     </p>
+                    <div className="flex flex-wrap justify-center gap-3 mt-7">
+                        <BookInterviewButton />
+                        {RESUME_URL && (
+                            <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className="btn-ghost">
+                                Download Resume
+                            </a>
+                        )}
+                    </div>
                 </div>
 
+                {BOOKING_URL && (
+                    <div className="card overflow-hidden mb-14">
+                        <iframe
+                            src={themedUrl(BOOKING_URL)}
+                            title="Book an interview with Awab Ali Shah"
+                            className="w-full h-[720px] md:h-[760px] border-0"
+                            loading="lazy"
+                        />
+                    </div>
+                )}
+
+                <h3 className="text-xl md:text-2xl text-center mb-6">Or reach me directly</h3>
                 <div className="grid md:grid-cols-3 gap-4">
                     <ContactCard
                         icon="email"
@@ -104,30 +125,12 @@ const ContactSection = () => {
                     />
                 </div>
 
-                {BOOKING_URL ? (
-                    <div className="mt-12">
-                        <h3 className="text-xl md:text-2xl text-center mb-6">Or book a 15-minute intro call</h3>
-                        <div className="card overflow-hidden">
-                            <iframe
-                                src={themedUrl(BOOKING_URL)}
-                                title="Book an intro call"
-                                className="w-full h-[720px] md:h-[760px] border-0"
-                                loading="lazy"
-                            />
-                        </div>
-                    </div>
-                ) : (
-                    <div className="flex flex-wrap justify-center gap-3 mt-10">
-                        <button onClick={() => setIsContactOpen(true)} className="btn-primary">
-                            Send a message about a role
-                        </button>
-                        {RESUME_URL && (
-                            <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className="btn-ghost">
-                                Download Resume
-                            </a>
-                        )}
-                    </div>
-                )}
+                <p className="text-center text-sm text-mute mt-8">
+                    Prefer to write?{' '}
+                    <button onClick={() => setIsContactOpen(true)} className="font-medium text-sage-700 hover:text-sage-800 underline underline-offset-4 cursor-pointer">
+                        Send a message about a role
+                    </button>
+                </p>
             </div>
 
             <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
