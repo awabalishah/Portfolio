@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import BookInterviewButton from './BookInterviewButton';
 
 const mediaBuying = [
     'Campaign structure, audiences and budgets on Meta and Google',
@@ -34,7 +35,7 @@ const fadeUp = {
 
 const Expertise = () => {
     return (
-        <section id="skills" className="py-20 md:py-28 px-4 scroll-mt-20">
+        <section id="skills" className="py-20 md:py-28 px-4 bg-sand scroll-mt-20">
             <div className="max-w-5xl mx-auto">
                 <div className="max-w-2xl mb-10 md:mb-12">
                     <span className="eyebrow mb-4">What I Bring</span>
@@ -61,7 +62,7 @@ const Expertise = () => {
                             ))}
                         </ul>
                         <div className="flex flex-wrap gap-2 mt-7">
-                            {['Meta Ads Manager', 'Google Ads', 'GA4', 'Conversions API'].map((tool) => (
+                            {['Meta Ads Manager', 'Google Ads', 'TikTok Ads', 'Conversions API', 'Google Tag Manager'].map((tool) => (
                                 <span key={tool} className="px-3 py-1 rounded-full bg-sage-700 text-xs text-sage-100">{tool}</span>
                             ))}
                         </div>
@@ -90,6 +91,10 @@ const Expertise = () => {
                             </motion.div>
                         ))}
                     </div>
+                </div>
+
+                <div className="text-center mt-12 md:mt-14">
+                    <BookInterviewButton />
                 </div>
             </div>
         </section>

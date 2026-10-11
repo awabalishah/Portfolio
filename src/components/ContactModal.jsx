@@ -16,7 +16,7 @@ const ContactModal = ({ isOpen, onClose }) => {
         e.preventDefault();
         const subject = `Role inquiry: ${formData.specialty} - ${formData.businessName}`;
         const body = `Name: ${formData.name}%0D%0ACompany: ${formData.businessName}%0D%0AEmail: ${formData.email}%0D%0APhone: ${formData.phone}%0D%0ARole Type: ${formData.specialty}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
-        window.location.href = `mailto:hey@awabalishah.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:awab@loopwiremedia.com?subject=${subject}&body=${body}`;
         onClose();
     };
 
@@ -55,7 +55,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                                 </svg>
                              </button>
 
-                            <h2 className="text-3xl mb-2">Let's Talk</h2>
+                            <h2 className="text-3xl mb-2">Send a Message</h2>
                             <p className="text-body mb-6">Tell me about the role and I will get back to you.</p>
 
                             <form onSubmit={handleSubmit} className="space-y-4 max-h-[70vh] overflow-y-auto pr-1">

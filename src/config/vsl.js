@@ -13,9 +13,24 @@ export const VSL_POSTER = '';
 //   'https://calendly.com/your-name/15min'
 //   'https://api.leadconnectorhq.com/widget/booking/XXXXXXXX'
 // Leave empty to fall back to the contact form popup.
-export const BOOKING_URL = '';
+export const BOOKING_URL = 'https://calendly.com/awabalishah/30min';
 
 // Your resume, shown as a "Download resume" button. Put a PDF in /public
 // (e.g. '/Awab-Ali-Shah-Resume.pdf') or paste a Google Drive link.
 // Leave empty to hide the button.
-export const RESUME_URL = '';
+export const RESUME_URL = '/Awab-Ali-Shah-Resume.pdf';
+
+// Contact details shown in the contact section and footer.
+export const CONTACT = {
+    email: 'awab@loopwiremedia.com',
+    whatsapp: '+1 402 872 0319',
+    linkedin: 'https://www.linkedin.com/in/awab-ali/',
+};
+
+// Headline numbers shown in the stat cards under the hero.
+export const STATS = [
+    { value: '5+ years', label: 'Running paid media', description: 'Meta, Google & TikTok Ads' },
+    { value: '10+', label: 'Concurrent ad accounts', description: 'Owned end to end at Wojo Media' },
+    { value: '$50K+', label: 'Monthly ad spend', description: 'Combined across accounts' },
+    { value: '30–50%', label: 'Lower cost per lead', description: 'Within the first 60 days' },
+];

@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import { results } from '../data/results';
+import BookInterviewButton from './BookInterviewButton';
 
 const Arrow = ({ direction, onClick, disabled }) => (
     <button
@@ -45,7 +46,7 @@ const ResultsGallery = () => {
     if (results.length === 0) return null;
 
     return (
-        <section id="results" className="py-20 md:py-28 bg-sand scroll-mt-20 overflow-hidden">
+        <section id="results" className="py-20 md:py-28 scroll-mt-20 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-12">
                     <div className="max-w-xl">
@@ -98,6 +99,10 @@ const ResultsGallery = () => {
             <div className="flex md:hidden justify-center gap-2 mt-6 px-4">
                 <Arrow direction="prev" onClick={() => scroll(-1)} disabled={atStart} />
                 <Arrow direction="next" onClick={() => scroll(1)} disabled={atEnd} />
+            </div>
+
+            <div className="text-center mt-10 md:mt-12 px-4">
+                <BookInterviewButton>Book Interview to discuss these results</BookInterviewButton>
             </div>
         </section>
     );

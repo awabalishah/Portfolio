@@ -1,8 +1,7 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import PageTransition from './components/PageTransition';
 import Home from './pages/Home';
-import ProjectDetail from './pages/ProjectDetail';
 
 function App() {
   const location = useLocation();
@@ -13,7 +12,8 @@ function App() {
       <PageTransition>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
-          <Route path="/project/:id" element={<ProjectDetail />} />
+          {/* Old portfolio links (e.g. /project/...) land on the homepage */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </PageTransition>
     </div>
@@ -21,4 +21,3 @@ function App() {
 }
 
 export default App;
-

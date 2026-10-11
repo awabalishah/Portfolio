@@ -45,7 +45,7 @@ a {
   }
 
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-line bg-paper text-ink font-medium text-sm transition-colors hover:border-sage-400 cursor-pointer;
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-line bg-paper text-ink font-semibold text-sm md:text-base transition-colors hover:border-sage-400 cursor-pointer;
   }
 
   .card {
